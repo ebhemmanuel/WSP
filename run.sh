@@ -1,1 +1,1 @@
-sass --watch sass:css --style compact
+sass --watch public/sass:public/css --style compact

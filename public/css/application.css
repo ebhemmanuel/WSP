@@ -1,3 +1,8 @@
-.button { background: #ff2d42; width: 100px; height: 30px; -webkit-border-radius: 3px 0px 3px 0px; -moz-border-radius: 3px 0px 3px 0px; -o-border-radius: 3px 0px 3px 0px; border-radius: 3px 0px 3px 0px; }
+ul, ol, li { margin: 0; padding: 0; }
 
-.jeanna { background: #ff3251; height: 100px; width: 100px; }
+#header h1 { width: 220px; height: 40px; margin: 0; padding: 0; }
+#header h1 a { display: block; font-weight: normal; font-size: 20px; line-height: 40px; }
+#header h1 a:before { content: " "; display: inline-block; width: 40px; height: 40px; background: url("../images/logo.png") no-repeat; float: left; background-size: 100%; }
+
+nav ul { float: right; height: 40px; line-height: 43px; list-style-type: none; }
+nav ul li { display: inline; padding: 10px; }
