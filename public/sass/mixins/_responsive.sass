@@ -1,0 +1,29 @@
+//
+// Mixin for inline responsive
+//
+
+$smallScreen         : 768px
+$mediumScreen     : 992px
+$largeScreen          : 1200px
+
+// @function smallerThan($breakPoint)
+//  @return "screen and (min-width:"+$breakPoint+")"
+
+// @function largerThan($breakPoint)
+//  @return "(max-width:"+$breakPoint+")" 
+
+// =forScreen ($size)
+//  @if $size == $smallScreen
+//   @media #{smallerThan($mediumScreen)} and #{largerThan}
+//    @content 
+
+// =forScreen($size)
+//  @if $size == $smallScreen
+//   @media screen and (min-width: $smallScreen)
+//    @content
+//  @if $size== $mediumScreen
+//   @media screen and (min-width: $mediumScreen)
+//    @content
+//  @if $size== $largeScreen
+//   @media screen and (min-width: $largeScreen)
+//    @content     
