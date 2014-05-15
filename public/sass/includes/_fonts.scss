@@ -1,0 +1,12 @@
+//
+// Global font styling
+//
+
+a {
+  color: $brandSecondary;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+
+}

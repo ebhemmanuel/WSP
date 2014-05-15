@@ -1,0 +1,70 @@
+//
+// Main persistant header, logo, and navigation
+//
+
+$lineHeight: 75px;
+$navDesktopHeight: 60px;
+$navPhoneHeight: 65px;
+$navTabletHeight: 160px;
+
+  // Navigation
+  nav {
+
+  background:$brandPrimary;
+  height: 80px;
+  line-height: $lineHeight;
+  text-align: right;
+
+  .c960{
+    margin: auto;
+    width: 1150px;
+  }
+
+  label {
+  display: none;
+  }
+     ul {
+      display: inline;
+      height: $lineHeight;
+      list-style-type: none;
+      
+      li {
+        display: inline;
+        padding: 0 10px;
+      }//end of li    
+    }//end of ul
+
+ //Tablet Settings
+
+@include forScreen($tablet){
+  height:$navTabletHeight; 
+  text-align: center;
+
+  label{
+  display: none;
+  }
+}
+
+
+    //Phone Settings
+
+@include forScreen($phone) {
+
+  height: $navPhoneHeight;
+  line-height: $navPhoneHeight;
+  text-align: left;
+
+  label{
+    display: inline;
+    font-size: 3.5em;
+  }
+    ul{
+      display: none;
+    }
+ }
+    
+   
+
+ 
+  }//end of nav
+
