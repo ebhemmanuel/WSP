@@ -7,6 +7,7 @@ module.exports = function (grunt) {
 
 		// Instantiating our tasks and options
 		watch:{
+
 			css: {
 				files: 'public/sass/**/*.scss', // look in public sass, and within any sub directory for any scss
 				tasks: 'compass',
@@ -14,6 +15,7 @@ module.exports = function (grunt) {
 					livereload: true //can change it to a specific port
 				},
 			},
+
 			jade: {
 				files: 'public/jade/**/*.jade', // look in public jade, and within any sub directory for any jade
 				tasks: 'jade',

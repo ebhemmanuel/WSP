@@ -1,70 +1,83 @@
 //
 // Main persistant header, logo, and navigation
 //
-
-$lineHeight: 75px;
-$navDesktopHeight: 60px;
+$paddingDesktopNav: 10px;
+$paddingTabletNav: 10px;
+$paddingPhoneNav: 13px;
+$linehTabletNav: 40px;
+$linehPhoneNav: 40px;
+$logoSize: 30%;
+$lh: -30px;
+$navDesktopHeight: 65px;
 $navPhoneHeight: 65px;
 $navTabletHeight: 160px;
 
-  // Navigation
-  nav {
+// Navigation
+nav{
 
-  background:$brandPrimary;
-  height: 80px;
-  line-height: $lineHeight;
-  text-align: right;
+	padding-top: $paddingDesktopNav;
+	background: $white;
+	height: $navDesktopHeight;
 
-  .c960{
-    margin: auto;
-    width: 1150px;
-  }
+	.logo{
+		img{
+		// border-radius: 50%;
+		// background: $brandAccent;
+		display: inline;
+		width: $logoSize;
+		height: $logoSize;
+			}
+	}
 
-  label {
-  display: none;
-  }
-     ul {
-      display: inline;
-      height: $lineHeight;
-      list-style-type: none;
-      
-      li {
-        display: inline;
-        padding: 0 10px;
-      }//end of li    
-    }//end of ul
+	a{
+	color: $brandAccent;
+	}
 
- //Tablet Settings
+	label{
+	display: none;
+	}
 
-@include forScreen($tablet){
-  height:$navTabletHeight; 
-  text-align: center;
+	ul{
+	margin-left: 30px;
+	margin-top: $lh;
+	list-style-type: none;
 
-  label{
-  display: none;
-  }
+	li {
+	display: inline;
+	padding: 0 15px;
+		}
+	}
+
+	 //Tablet Settings
+	@include forScreen($tablet){
+		padding-top: $paddingTabletNav;
+		line-height: $linehTabletNav;
+		height: $navDesktopHeight;
+		text-align: center;
+
+		ul{
+		display: none;
+		}
+
+		label{
+		display: inline-block;
+		font-size: 3.5em;
+		}
+	}
+
+	//Phone Settings
+	@include forScreen($phone) {
+		height: $navPhoneHeight;
+		padding-top: $paddingPhoneNav;
+		line-height: $linehPhoneNav;
+
+		label{
+		display: inline;
+		font-size: 3.5em;
+		}
+		ul{
+		display: none;
+		}
+	 }
 }
-
-
-    //Phone Settings
-
-@include forScreen($phone) {
-
-  height: $navPhoneHeight;
-  line-height: $navPhoneHeight;
-  text-align: left;
-
-  label{
-    display: inline;
-    font-size: 3.5em;
-  }
-    ul{
-      display: none;
-    }
- }
-    
-   
-
- 
-  }//end of nav
 

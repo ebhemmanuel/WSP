@@ -11,28 +11,70 @@
 //
 @import 'mixins/responsive';
 
-
 //
 // Globals = persistant dom layout across pages
 //
 @import 'globals/navigation';
 
+body {
+  background: $brandSecondary;
+  }
 
+.jumbotron{
 
-body { 
-background: #000;
+  //Variables forJumbotron
+  $pFiller:40px;                              //overall Padding for filler
+  //--------------------------------
+
+  width: 100%;
+  height: 720px;
+  display: block;
+  background: url(../images/l3.jpg)  no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .spacer{
+  height: 280px;
+  // text-align:center;
+  }
+  .filler{
+
+  width: 600px;
+  padding:$pFiller;
+    // h2{
+    // color: $brandPrimary;
+    // }
+    // p{
+    // color: $brandPrimary;}
+    // }
+  // background:$brandSecondary;
+  }
+
+  @include forScreen($tablet){
+
+      background-position:0px;
+      height: 500px;
+      width: 100%;
+      p{font-size:19px;}
+  }
+
+    @include forScreen($phone){
+
+      background-position:0px;
+      height: 400px;
+      width: 100%;
+      p{font-size:19px;}
+      .spacer{
+        height: 150px;
+        // text-align:center;
+      }
+      .filler{
+        padding: 5px;
+        width: 220px;
+        }
+  }
 }
 
-.feature{
-width: 100%;
-height: 640px;
-background: $black;
-}
 
-.logo{
-display: inline;
-border-radius: 50%;
-background: $brandAccent;
-width: 40px;
-height: 40px;
-}
