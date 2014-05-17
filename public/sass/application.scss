@@ -22,35 +22,15 @@ body {
 
 .jumbotron{
 
-  //Variables forJumbotron
-  $pFiller:40px;                              //overall Padding for filler
-  //--------------------------------
-
   width: 100%;
   height: 720px;
+  // margin-top: 65px;
   display: block;
   background: url(../images/l3.jpg)  no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  .spacer{
-  height: 280px;
-  // text-align:center;
-  }
-  .filler{
-
-  width: 600px;
-  padding:$pFiller;
-    // h2{
-    // color: $brandPrimary;
-    // }
-    // p{
-    // color: $brandPrimary;}
-    // }
-  // background:$brandSecondary;
-  }
 
   @include forScreen($tablet){
       background-position:0px;
@@ -61,17 +41,9 @@ body {
 
     @include forScreen($phone){
       background-position:0px;
-      height: 400px;
+      height: 300px;
       width: 100%;
       p{font-size:19px;}
-      .spacer{
-        height: 150px;
-        // text-align:center;
-      }
-      .filler{
-        padding: 5px;
-        width: 220px;
-        }
   }
 }
 

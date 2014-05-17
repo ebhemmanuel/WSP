@@ -14,7 +14,14 @@ $navPhoneHeight: 65px;
 $navTabletHeight: 160px;
 
 // Navigation
+
+.navbar{
+		margin-bottom: 0px;
+	}
+
 nav{
+
+
 
 	padding-top: $paddingDesktopNav;
 	background: $white;

@@ -49,6 +49,9 @@ a {
   font-weight: normal;
   font-style: normal; }
 
+.navbar {
+  margin-bottom: 0px; }
+
 nav {
   padding-top: 10px;
   background: white;
@@ -122,11 +125,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  .jumbotron .spacer {
-    height: 280px; }
-  .jumbotron .filler {
-    width: 600px;
-    padding: 40px; }
   @media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
     .jumbotron {
       background-position: 0px;
@@ -137,12 +135,7 @@ body {
   @media screen and (min-width: 360px) and (max-width: 400px) {
     .jumbotron {
       background-position: 0px;
-      height: 400px;
+      height: 300px;
       width: 100%; }
       .jumbotron p {
-        font-size: 19px; }
-      .jumbotron .spacer {
-        height: 150px; }
-      .jumbotron .filler {
-        padding: 5px;
-        width: 220px; } }
+        font-size: 19px; } }
