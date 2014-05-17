@@ -2,6 +2,11 @@ ul, ol, li {
   margin: 0;
   padding: 0; }
 
+a {
+  color: #333333; }
+  a:hover {
+    text-decoration: none !important; }
+
 @font-face {
   font-family: 'open_sansbold';
   src: url("opensans-bold-webfont.eot");
@@ -44,26 +49,23 @@ ul, ol, li {
   font-weight: normal;
   font-style: normal; }
 
-a {
-  color: #333333; }
-  a:hover {
-    text-decoration: none !important; }
-
 nav {
   padding-top: 10px;
   background: white;
   height: 65px; }
   nav .logo img {
     display: inline;
-    width: 30%;
-    height: 30%; }
+    width: 60%;
+    height: 60%; }
   nav a {
-    color: #ed1c24; }
+    color: #333333; }
+    nav a:hover {
+      color: #ed1c24; }
   nav label {
     display: none; }
   nav ul {
     margin-left: 30px;
-    margin-top: -30px;
+    margin-top: -70px;
     list-style-type: none; }
     nav ul li {
       display: inline;
@@ -71,27 +73,45 @@ nav {
   @media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
     nav {
       padding-top: 10px;
-      line-height: 40px;
+      line-height: 48px;
       height: 65px;
-      text-align: center; }
+      font-weight: lighter; }
+      nav .firstnav {
+        display: none; }
+      nav .logo {
+        margin-left: -10px;
+        margin-top: -10px;
+        width: 23%;
+        height: 23%; }
       nav ul {
         display: none; }
       nav label {
         display: inline-block;
-        font-size: 3.5em; } }
+        font-size: 3.5em;
+        font-weight: lighter;
+        margin-left: -20px; } }
   @media screen and (min-width: 360px) and (max-width: 400px) {
     nav {
       height: 65px;
       padding-top: 13px;
-      line-height: 40px; }
+      line-height: 45px; }
+      nav .firstnav {
+        display: none; }
+      nav .logo {
+        margin-left: -10px;
+        margin-top: -10px;
+        width: 23%;
+        height: 23%; }
       nav label {
-        display: inline;
-        font-size: 3.5em; }
+        display: inline-block;
+        font-size: 3.5em;
+        font-weight: lighter;
+        margin-left: -20px; }
       nav ul {
         display: none; } }
 
 body {
-  background: #333333; }
+  background: white; }
 
 .jumbotron {
   width: 100%;

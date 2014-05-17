@@ -17,7 +17,7 @@
 @import 'globals/navigation';
 
 body {
-  background: $brandSecondary;
+  background: $white;
   }
 
 .jumbotron{
@@ -53,7 +53,6 @@ body {
   }
 
   @include forScreen($tablet){
-
       background-position:0px;
       height: 500px;
       width: 100%;
@@ -61,7 +60,6 @@ body {
   }
 
     @include forScreen($phone){
-
       background-position:0px;
       height: 400px;
       width: 100%;

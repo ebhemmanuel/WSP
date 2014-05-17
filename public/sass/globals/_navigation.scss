@@ -4,10 +4,11 @@
 $paddingDesktopNav: 10px;
 $paddingTabletNav: 10px;
 $paddingPhoneNav: 13px;
-$linehTabletNav: 40px;
-$linehPhoneNav: 40px;
-$logoSize: 30%;
-$lh: -30px;
+$linehTabletNav:48px;
+$linehPhoneNav: 45px;
+$logoSizeD:60%;
+$logoSize: 23%;
+$lh: -70px;
 $navDesktopHeight: 65px;
 $navPhoneHeight: 65px;
 $navTabletHeight: 160px;
@@ -24,14 +25,19 @@ nav{
 		// border-radius: 50%;
 		// background: $brandAccent;
 		display: inline;
-		width: $logoSize;
-		height: $logoSize;
+		width: $logoSizeD;
+		height: $logoSizeD;
 			}
 	}
 
 	a{
-	color: $brandAccent;
+	color: $brandSecondary;
+		&:hover{
+		color:$brandAccent;
+		}
 	}
+
+
 
 	label{
 	display: none;
@@ -50,10 +56,23 @@ nav{
 
 	 //Tablet Settings
 	@include forScreen($tablet){
+		.firstnav{
+		display: none;
+		}
 		padding-top: $paddingTabletNav;
 		line-height: $linehTabletNav;
 		height: $navDesktopHeight;
-		text-align: center;
+		font-weight:lighter;
+
+		.logo{
+		// border-radius: 50%;
+		// background: $brandAccent;
+		margin-left:-10px;
+		margin-top:-10px;
+		width: $logoSize;
+		height: $logoSize;
+
+			}
 
 		ul{
 		display: none;
@@ -62,18 +81,31 @@ nav{
 		label{
 		display: inline-block;
 		font-size: 3.5em;
+		font-weight:lighter;
+		margin-left:-20px;
 		}
 	}
 
 	//Phone Settings
 	@include forScreen($phone) {
+		.firstnav{
+		display: none;
+		}
+		.logo{
+		margin-left:-10px;
+		margin-top:-10px;
+		width: $logoSize;
+		height:$logoSize;
+		}
 		height: $navPhoneHeight;
 		padding-top: $paddingPhoneNav;
 		line-height: $linehPhoneNav;
 
 		label{
-		display: inline;
+		display: inline-block;
 		font-size: 3.5em;
+		font-weight:lighter;
+		margin-left:-20px;
 		}
 		ul{
 		display: none;

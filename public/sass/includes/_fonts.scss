@@ -1,3 +1,13 @@
+
+a {
+  color: $brandSecondary;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+
+}
+
 //
 // Global font styling
 //
@@ -86,14 +96,5 @@
          url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-
-a {
-  color: $brandSecondary;
-
-  &:hover {
-    text-decoration: none !important;
-  }
 
 }

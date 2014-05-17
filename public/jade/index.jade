@@ -16,29 +16,33 @@ html
 
 		//- Header and Nav
 		//- ___________________________
-		nav(role="navigation")
-			.container
-				.row
-					label#toggle.pull-left(for='menu-toggle')
-						| ≡
-				.logo.pull-left
-					img(src="./public/images/logo1.svg")
-					.col-xs-6.col-sm-offset-6
-						ul
-							li
-								a(href='#') Homes
-							li
-								a(href='#') Products
-							li
-								a(href='#') Support
-							li
-								a(href='#') Contact
-							li
-								a(href='#') Sign Up
+		nav.navbar-fixed(role="navigation")
+			.firstnav
+				.container.pull-left.col-xs-8.col-sm-offset-2
+					.row
+						.logo.pull-left
+							img(src="./public/images/logo1.svg")
+					.container.pull-left.col-xs-12.col-sm-offset-1
+							ul
+								li
+									a(href='#') Homes
+								li
+									a(href='#') Products
+								li
+									a(href='#') Support
+								li
+									a(href='#') Contact
+								li
+									a(href='#') Sign Up
+			.mobilenav
+				label#toggle.pull-left(for='menu-toggle')
+					| ≡
+					img.logo(src="./public/images/logo1.svg")
+
+
 
 		//- Big picture CTA
 		//- ___________________________
-
 		.jumbotron
 			.row
 				.col-sm-6.col-sm-offset-2
