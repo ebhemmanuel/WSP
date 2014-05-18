@@ -6,6 +6,8 @@ $tablet     : 600px;
 $smallScreen       : 768px;
 $mediumScreen   : 992px;
 $largeScreen        : 1200px;
+$Desktop:'';
+$BigScreen:'';
 
 
 @function minW($breakPoint) {
@@ -30,14 +32,14 @@ $largeScreen        : 1200px;
 		}
 	}
 
-	@if $size == $mediumScreen {
-		@media #{minW($mediumScreen)} {
+	@if $size == $smallScreen {
+		@media #{minW($smallScreen)} {
 			@content;
 		}
 	}
 
-	@if $size == $largeScreen {
-		@media #{minW($largeScreen)} {
+	@if $size == $mediumScreen {
+		@media #{minW($mediumScreen)} {
 			@content;
 		}
 	}

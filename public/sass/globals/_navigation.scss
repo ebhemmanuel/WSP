@@ -6,7 +6,7 @@ $paddingTabletNav: 10px;
 $paddingPhoneNav: 13px;
 $linehTabletNav:48px;
 $linehPhoneNav: 45px;
-$logoSizeD:60%;
+$logoSizeD:95%;
 $logoSize: 23%;
 $lh: -70px;
 $navDesktopHeight: 65px;
@@ -22,33 +22,19 @@ $navTabletHeight: 160px;
 nav{
 
 
-
 	padding-top: $paddingDesktopNav;
 	background: $white;
 	height: $navDesktopHeight;
 
-	.logo{
 		img{
 		// border-radius: 50%;
 		// background: $brandAccent;
 		display: inline;
 		width: $logoSizeD;
 		height: $logoSizeD;
+		margin-top: -10px;
 			}
-	}
 
-	a{
-	color: $brandSecondary;
-		&:hover{
-		color:$brandAccent;
-		}
-	}
-
-
-
-	label{
-	display: none;
-	}
 
 	ul{
 	margin-left: 30px;
@@ -60,31 +46,23 @@ nav{
 	padding: 0 15px;
 		}
 	}
+	//Small Screen (Desktop) Settings
+	@include forScreen($smallScreen){
+	.container{width: 800px;}
+	}
+
+	//Desktop Settings
+	@include forScreen($mediumScreen){
+	.container{width: 970px;}
+	}
+
 
 	 //Tablet Settings
 	@include forScreen($tablet){
-		.firstnav{
-		display: none;
-		}
 		padding-top: $paddingTabletNav;
 		line-height: $linehTabletNav;
 		height: $navDesktopHeight;
 		font-weight:lighter;
-
-		.logo{
-		// border-radius: 50%;
-		// background: $brandAccent;
-		margin-left:-10px;
-		margin-top:-10px;
-		width: $logoSize;
-		height: $logoSize;
-
-			}
-
-		ul{
-		display: none;
-		}
-
 		label{
 		display: inline-block;
 		font-size: 3.5em;
@@ -95,27 +73,14 @@ nav{
 
 	//Phone Settings
 	@include forScreen($phone) {
-		.firstnav{
-		display: none;
-		}
-		.logo{
-		margin-left:-10px;
-		margin-top:-10px;
-		width: $logoSize;
-		height:$logoSize;
-		}
 		height: $navPhoneHeight;
 		padding-top: $paddingPhoneNav;
 		line-height: $linehPhoneNav;
-
 		label{
 		display: inline-block;
 		font-size: 3.5em;
 		font-weight:lighter;
 		margin-left:-20px;
-		}
-		ul{
-		display: none;
 		}
 	 }
 }
