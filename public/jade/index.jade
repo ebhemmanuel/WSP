@@ -16,10 +16,10 @@ html
 
 		//- Header and Nav
 		//- ___________________________.navbar-fixed-top
-		nav.navbar.navbar-default(role="navigation")
+		nav.navbar.navbar-default.navbar-static-top(role="navigation")
 					.container
 						.navbar-header
-							button.navbar-toggle(type="button")(data-toggle="collapse")(data-target=".navbar-ex1-collapse")
+							button.navbar-toggle(type="button")(data-toggle="collapse")(data-target=".navbar-collapse")
 								span.sr-only Toggle navigation
 								span.icon-bar
 								span.icon-bar
@@ -27,22 +27,20 @@ html
 							a.navbar-brand(href="#")
 								img(src="public/images/logo3.svg")
 
-						.collapse.navbar-collapse.navbar-ex1-collapse
+						.collapse.navbar-collapse
 							ul.nav.navbar-nav.pull-right
 								li
-									a(href="#").active Home
+									a(href="index.html").active Home
 								li
-									a(href="#") Products
+									a(href="products.html") Products
 								li
-									a(href="#") Support
+									a(href="support.html") Support
 								li
-									a(href="#") Contact
-								li
-									a(href="#") Sign Up
+									a(href="signup.html") Sign Up
 		//- Big picture CTA
 		//- ___________________________
-		.jumbotron
-			.container.jumbo.col-md-offset-4
+		.jumbotron.cta
+			.container.jumbo
 				h1 Join Our World
 				p The sheer joy of photography.
 
@@ -51,7 +49,20 @@ html
 		//-___________________________
 		#footer
 			.container
-				p.text-muted &copy; Copyright 2014 Leica Camera AG
+				.row
+					.col-sm-4
+						p &copy; Copyright 2014 Leica Camera AG
+					//- .col-sm-4.col-sm-offset-4
+					//- 	ul.list-unstyled.footer
+					//- 		li
+					//- 			a(href="#") TERMS OF USE
+					//- 		li
+					//- 			a(href="#") PRIVACY
+					//- 		li
+					//- 			a(href="#") FAQ
+					//- 		li
+					//- 			a(href="#") CONTACT US
+
 
 		script(src='public/js/jquery-1.11.1.min.js')
 		script(src='public/js/bootstrap.min.js')

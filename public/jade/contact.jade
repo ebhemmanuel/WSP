@@ -30,47 +30,60 @@ html
 						.collapse.navbar-collapse.navbar-ex1-collapse
 							ul.nav.navbar-nav.pull-right
 								li
-									a(href="#").active Home
+									a(href="index.html").active Home
 								li
-									a(href="#") Products
+									a(href="products.html") Products
 								li
-									a(href="#") Support
+									a(href="support.html") Support
 								li
-									a(href="#") Contact
+									a(href="contact.html") Contact
 								li
-									a(href="#") Sign Up
+									a(href="signup.html") Sign Up
 		//- Big picture CTA
 		//- ___________________________
-		.jumbotron
+		.jumbotron.cta
 			.container.jumbo.col-md-offset-4
 				h1 Contact US.
 				p The sheer joy of photography.
 
 
-		.container-fluid.contact
-				.row
-					.col-md-3.col-md-push-2
+		.container.contact.space
+				.row.col-xs-offset-1
+					.col-xs-4
 						h5 Leica AG Cameras
 						ul.list-unstyled
-							li 1311 SA Cardinal Court
-							li Vancouver, WA 22933
-							li USA
-					.col-md-3.col-md-push-2
+							li.text-muted 1311 SA Cardinal Court
+							li.text-muted Vancouver, WA 22933
+							li.text-muted USA
+					.col-xs-4
 						h5 Customer Support
 						ul.list-unstyled
-							li TEL 800-922-6613
-							li support@leica.com
-					.col-md-3.col-md-push-2
+							li.text-muted TEL 800-922-6613
+							li.text-muted support@leica.com
+					.col-xs-4
 						h5 Follow Us
 						ul.list-unstyled
-							li Facebook
-							li Twitter
-							li Flickr
+							li.text-muted Facebook
+							li.text-muted Twitter
+							li.text-muted Flickr
 
+		//-Footer
+		//-___________________________
 		#footer
-			.container.text-muted
-				p &copy; Copyright 2014 Leica Camera AG
-
+			.container
+				.row
+					.col-md-4.col-sm-push.2
+						p &copy; Copyright 2014 Leica Camera AG
+					.col-xs-4.col-sm-push.4
+						ul
+							li
+								a(href="#")
+							li
+								a(href="#")
+							li
+								a(href="#")
+							li
+								a(href="#")
 
 		script(src='public/js/jquery-1.11.1.min.js')
 		script(src='public/js/bootstrap.min.js')

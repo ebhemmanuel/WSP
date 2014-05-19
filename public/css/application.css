@@ -99,32 +99,42 @@ nav {
 body {
   background: white; }
 
-.container.jumbo {
+.jumbo {
   margin-top: 220px; }
-  .container.jumbo h1 {
+  .jumbo h1 {
     background: white;
     color: #333333;
     width: 500px;
     padding: 10px;
     text-align: center; }
-  .container.jumbo p {
+  .jumbo p {
     padding: 10px;
     background: white;
     color: #333333;
     width: 500px;
     text-align: center; }
 
+.space {
+  padding-bottom: 30px; }
+
 #footer {
-  background: red;
+  background: #ed1c24;
   height: 60px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  color: white; }
+  #footer ul li {
+    padding-right: 15px;
+    display: inline; }
 
 .container-fluid.footer {
   color: white;
   background: #333333;
   padding-top: 20px; }
 
-.jumbotron {
+.jumbotron.overview p {
+  font-size: 16px; }
+
+.jumbotron.cta {
   width: 100%;
   height: 720px;
   background: url(../images/83H.jpg) no-repeat center center;
@@ -133,16 +143,16 @@ body {
   -o-background-size: cover;
   background-size: cover; }
   @media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
-    .jumbotron {
+    .jumbotron.cta {
       background-position: 0px;
       height: 500px;
       width: 100%; }
-      .jumbotron p {
+      .jumbotron.cta p {
         font-size: 19px; } }
   @media screen and (min-width: 360px) and (max-width: 400px) {
-    .jumbotron {
+    .jumbotron.cta {
       background-position: 0px;
       height: 300px;
       width: 100%; }
-      .jumbotron p {
+      .jumbotron.cta p {
         font-size: 19px; } }
