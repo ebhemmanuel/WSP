@@ -49,6 +49,7 @@ nav{
 	//Small Screen (Desktop) Settings
 	@include forScreen($smallScreen){
 	.container{width: 800px;}
+	.navbar>.container .navbar-brand{margin-left: -110px;}
 	}
 
 	//Desktop Settings

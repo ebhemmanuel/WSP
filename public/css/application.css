@@ -70,7 +70,9 @@ nav {
       padding: 0 15px; }
   @media screen and (min-width: 768px) {
     nav .container {
-      width: 800px; } }
+      width: 800px; }
+    nav .navbar > .container .navbar-brand {
+      margin-left: -110px; } }
   @media screen and (min-width: 992px) {
     nav .container {
       width: 970px; } }
@@ -99,20 +101,28 @@ nav {
 body {
   background: white; }
 
+.placeholder-thumbnail {
+  display: block;
+  height: 140px;
+  width: 140px;
+  background: #999;
+  margin-left: auto;
+  margin-right: auto; }
+
 .jumbo {
   margin-top: 220px; }
   .jumbo h1 {
     background: white;
     color: #333333;
-    width: 500px;
-    padding: 10px;
-    text-align: center; }
+    padding: 10px; }
+  .jumbo h2 {
+    background: white;
+    color: #333333;
+    padding: 10px; }
   .jumbo p {
     padding: 10px;
     background: white;
-    color: #333333;
-    width: 500px;
-    text-align: center; }
+    color: #333333; }
 
 .space {
   padding-bottom: 30px; }
@@ -126,13 +136,54 @@ body {
     padding-right: 15px;
     display: inline; }
 
-.container-fluid.footer {
-  color: white;
-  background: #333333;
-  padding-top: 20px; }
+.support {
+  height: 480px;
+  background: #F2F2F2;
+  margin-bottom: 0px; }
+  .support p {
+    font-size: 16px; }
 
-.jumbotron.overview p {
-  font-size: 16px; }
+.footer a {
+  color: white; }
+
+.signup {
+  height: 695px; }
+  .signup p {
+    font-size: 16px; }
+
+.overview {
+  height: 695px; }
+  .overview p {
+    font-size: 16px; }
+
+.build {
+  margin-top: -40px;
+  height: 900px;
+  background: #fff; }
+  .build p {
+    font-size: 16px; }
+
+.quality {
+  margin-top: -40px;
+  height: 900px;
+  background: #fafafa; }
+  .quality p {
+    font-size: 16px; }
+
+.memory {
+  margin-top: -40px;
+  height: 600px;
+  background: #555; }
+  .memory p {
+    font-size: 16px; }
+
+.accessories {
+  margin-top: -40px;
+  margin-bottom: -40px;
+  height: 680px; }
+
+.jumbotron {
+  margin-bottom: 0px; }
 
 .jumbotron.cta {
   width: 100%;

@@ -16,10 +16,10 @@ html
 
 		//- Header and Nav
 		//- ___________________________.navbar-fixed-top
-		nav.navbar.navbar-default(role="navigation")
+		nav.navbar.navbar-default.navbar-static-top(role="navigation")
 					.container
 						.navbar-header
-							button.navbar-toggle(type="button")(data-toggle="collapse")(data-target=".navbar-ex1-collapse")
+							button.navbar-toggle(type="button")(data-toggle="collapse")(data-target=".navbar-collapse")
 								span.sr-only Toggle navigation
 								span.icon-bar
 								span.icon-bar
@@ -27,16 +27,14 @@ html
 							a.navbar-brand(href="#")
 								img(src="public/images/logo3.svg")
 
-						.collapse.navbar-collapse.navbar-ex1-collapse
+						.collapse.navbar-collapse
 							ul.nav.navbar-nav.pull-right
 								li
 									a(href="index.html").active Home
 								li
-									a(href="products.html") Products
+									a(href="products.html") Cameras
 								li
 									a(href="support.html") Support
-								li
-									a(href="contact.html") Contact
 								li
 									a(href="signup.html") Sign Up
 
@@ -44,24 +42,32 @@ html
 		//-___________________________
 
 		.jumbotron.LT
-			.container.jumbo.col-md-push-4
-				h1 Leica T
-				p The sheer joy of photography.
+			.container
+				.row
+					.col-md-4.jumbo
+						h1 Leica T
+						p The sheer joy of photography.
 
 		.jumbotron.LS
-			.container.jumbo.col-md-push-4
-				h1 Leica S
-				p The sheer joy of photography.
+			.container
+				.row
+					.col-md-4.jumbo
+						h1 Leica S
+						p The sheer joy of photography.
 
 		.jumbotron.LM
-			.container.jumbo.col-md-push-4
-				h1 Leica M
-				p The sheer joy of photography.
+			.container
+				.row
+					.col-md-4.jumbo
+						h1 Leica M
+						p The sheer joy of photography.
 
 		.jumbotron.LX
-			.container.jumbo.col-md-push-4
-				h1 Leica X
-				p The sheer joy of photography.
+			.container
+				.row
+					.col-md-4.jumbo
+						h1 Leica X
+						p The sheer joy of photography.
 
 
 		//-Footer
@@ -69,18 +75,18 @@ html
 		#footer
 			.container
 				.row
-					.col-md-4.col-sm-push.2
+					.col-sm-4
 						p &copy; Copyright 2014 Leica Camera AG
-					.col-xs-4.col-sm-push.4
-						ul
+					.col-sm-4.col-sm-offset-4
+						ul.list-unstyled.footer
 							li
-								a(href="#")
+								a(href="#") Terms of Use
 							li
-								a(href="#")
+								a(href="#") Privacy
 							li
-								a(href="#")
+								a(href="#") FAQ
 							li
-								a(href="#")
+								a(href="contact.html") Contact Us
 
 		script(src='public/js/jquery-1.11.1.min.js')
 		script(src='public/js/bootstrap.min.js')

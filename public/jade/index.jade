@@ -32,17 +32,35 @@ html
 								li
 									a(href="index.html").active Home
 								li
-									a(href="products.html") Products
+									a(href="products.html") Cameras
 								li
 									a(href="support.html") Support
 								li
 									a(href="signup.html") Sign Up
+
 		//- Big picture CTA
 		//- ___________________________
 		.jumbotron.cta
-			.container.jumbo
-				h1 Join Our World
-				p The sheer joy of photography.
+				.row
+					.col-md-4
+					.jumbo.col-md-3.text-center
+						h1 Leica World
+						p Sign Up
+
+
+		.container.text-center
+			.row
+				.col-sm-1
+				.col-sm-3
+					img.img-rounded.placeholder-thumbnail
+					p Designed from the ground up as tools for creating completely unique visual experiences, nothing more and nothing less.
+				.col-sm-3
+					img.img-rounded.placeholder-thumbnail
+					p Designed from the ground up as tools for creating completely unique visual experiences, nothing more and nothing less.
+				.col-sm-3
+					img.img-rounded.placeholder-thumbnail
+					p Designed from the ground up as tools for creating completely unique visual experiences, nothing more and nothing less.
+
 
 
 		//-Footer
@@ -52,16 +70,16 @@ html
 				.row
 					.col-sm-4
 						p &copy; Copyright 2014 Leica Camera AG
-					//- .col-sm-4.col-sm-offset-4
-					//- 	ul.list-unstyled.footer
-					//- 		li
-					//- 			a(href="#") TERMS OF USE
-					//- 		li
-					//- 			a(href="#") PRIVACY
-					//- 		li
-					//- 			a(href="#") FAQ
-					//- 		li
-					//- 			a(href="#") CONTACT US
+					.col-sm-4.col-sm-offset-4
+						ul.list-unstyled.footer
+							li
+								a(href="#") Terms of Use
+							li
+								a(href="#") Privacy
+							li
+								a(href="#") FAQ
+							li
+								a(href="contact.html") Contact Us
 
 
 		script(src='public/js/jquery-1.11.1.min.js')
