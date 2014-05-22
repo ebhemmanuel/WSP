@@ -15,7 +15,7 @@ html
 	body
 		//- Header and Nav
 		//- ___________________________.navbar-fixed-top
-		include includes/nav
+		include includes/_nav
 
 		//- Big picture CTA
 		//- ___________________________
@@ -49,10 +49,7 @@ html
 
 		//-Footer
 		//-___________________________
-		include includes/footer
-
-		script(src='public/js/jquery-1.11.1.min.js')
-		script(src='public/js/bootstrap.min.js')
-		script document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+		include includes/_footer
+		include includes/_js
 
 

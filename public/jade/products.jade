@@ -16,7 +16,7 @@ html
 
 		//- Header and Nav
 		//- ___________________________.navbar-fixed-top
-		include includes/nav
+		include includes/_nav
 
 		//-Product Listing
 		//-___________________________
@@ -25,37 +25,42 @@ html
 			.container
 				.row
 					.col-md-4.jumbo
-						h1 Leica T
-						p The sheer joy of photography.
+						h1.highlight
+						| Leica T
+						p.highlight
+						| The sheer joy of photography.
 
 		.jumbotron.LS
 			.container
 				.row
-					.col-md-4.jumbo
-						h1 Leica S
-						p The sheer joy of photography.
+					.col-md-4.pushDown
+						h1.highlight
+						| Leica S
+						p.highlight
+						| The sheer joy of photography.
 
 		.jumbotron.LM
 			.container
 				.row
 					.col-md-4.jumbo
-						h1 Leica M
-						p The sheer joy of photography.
+						h1.highlight
+						| Leica M
+						p.highlight
+						| The sheer joy of photography.
 
 		.jumbotron.LX
 			.container
 				.row
 					.col-md-4.jumbo
-						h1 Leica X
-						p The sheer joy of photography.
+						h1.highlight
+						| Leica X
+						p.highlight
+						| The sheer joy of photography.
 
 
 		//-Footer
 		//-___________________________
-		include includes/footer
-
-		script(src='public/js/jquery-1.11.1.min.js')
-		script(src='public/js/bootstrap.min.js')
-		script document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+		include includes/_footer
+		include includes/_js
 
 

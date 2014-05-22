@@ -15,16 +15,16 @@ html
 	body
 		//- Header and Nav
 		//- ___________________________.navbar-fixed-top
-		include includes/nav
+		include includes/_nav
 
 		//- Big picture CTA
 		//- ___________________________
 		.jumbotron.cta
 				.row
 					.col-md-4
-					.jumbo.col-md-4.text-center
-						h1 Leica World
-						p Sign Up
+					.pushDown.col-md-4.text-center
+						h1.highlight Leica World
+						p.highlight Sign Up
 
 		.container.text-center
 			.row
@@ -41,11 +41,7 @@ html
 
 		//-Footer
 		//-___________________________
-		include includes/footer
-
-
-		script(src='public/js/jquery-1.11.1.min.js')
-		script(src='public/js/bootstrap.min.js')
-		script document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+		include includes/_footer
+		include includes/_js
 
 

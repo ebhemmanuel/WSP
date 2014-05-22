@@ -109,20 +109,14 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.jumbo {
+.highlight {
+  display: block;
+  background: white;
+  color: #333333;
+  padding: 10px; }
+
+.pushDown {
   margin-top: 220px; }
-  .jumbo h1 {
-    background: white;
-    color: #333333;
-    padding: 10px; }
-  .jumbo h2 {
-    background: white;
-    color: #333333;
-    padding: 10px; }
-  .jumbo p {
-    padding: 10px;
-    background: white;
-    color: #333333; }
 
 .space {
   padding-bottom: 30px; }
@@ -136,46 +130,37 @@ body {
     padding-right: 15px;
     display: inline; }
 
+.smallerText {
+  font-size: 16px; }
+
 .support {
   height: 480px;
   background: #F2F2F2;
   margin-bottom: 0px; }
-  .support p {
-    font-size: 16px; }
 
 .footer a {
   color: white; }
 
 .signup {
   height: 695px; }
-  .signup p {
-    font-size: 16px; }
 
 .overview {
   height: 695px; }
-  .overview p {
-    font-size: 16px; }
 
 .build {
   margin-top: -40px;
   height: 900px;
   background: #fff; }
-  .build p {
-    font-size: 16px; }
 
 .quality {
   margin-top: -40px;
   height: 900px;
   background: #fafafa; }
-  .quality p {
-    font-size: 16px; }
 
 .memory {
   margin-top: -40px;
   height: 600px;
   background: #555; }
-  .memory p {
-    font-size: 16px; }
 
 .accessories {
   margin-top: -40px;

@@ -1,141 +1,99 @@
 //
+// Globals = persistant dom layout across pages
+@import 'globals/variables';
+//
 // Includes = persistent aesthetic styling across pages
 //
 @import 'includes/resets';
 @import 'includes/colors';
 @import 'includes/fonts';
-@import 'includes/variables';
-
 //
 // Mixins
 //
 @import 'mixins/responsive';
-
-//
-// Globals = persistant dom layout across pages
 //
 @import 'globals/navigation';
+
 
 body {
   background: $white;
   }
 
-  .placeholder-thumbnail{
+.placeholder-thumbnail{
   display: block;
   height: 140px;
   width: 140px;
   background: #999;
   margin-left: auto;
   margin-right:auto;
+}
 
-  }
+.highlight{
+  display: block;
+  background:$white;
+  color:$black;
+  padding: $paddingH;
+}
 
-    .jumbo{
-
-    $paddingH:10px;
-    margin-top: 220px;
-
-  h1{
-   background:$white;
-   color:$black;
-
-   padding: $paddingH;
-
-  }h2{
-   background:$white;
-   color:$black;
-
-   padding: $paddingH;
-  }
-  p{
-    padding: $paddingH;
-    background:$white;
-    color:$black;
-
-  }
-
+.pushDown{
+  margin-top: 220px;
 }
 
 .space{
-
-padding-bottom:30px;
-
+  padding-bottom: 30px;
 }
+
 #footer{
   background: $red;
   height: 60px;
   padding-top: 20px;
   color: $white;
-      ul li{
-        padding-right:15px;
-        display: inline;
+    ul li{
+      padding-right:15px;
+      display: inline;
+    }
+}
 
-      }
-  }
+.smallerText{
+  font-size: 16px;
+}
 
-  .support{
-
+.support{
   height: 480px;
   background:#F2F2F2;
   margin-bottom: 0px;
+}
 
-    p{
-      font-size: 16px;
-    }
-
-  }
-
-    .footer{
-      a{
+.footer{
+  a{
     color: $white;
-       }
+    }
   }
 
-  .signup{
-
-    height: 695px;
-
-    p{
-      font-size: 16px;
-    }
-
+.signup{
+  height: 695px;
   }
 
 .overview{
-
-    height: 695px;
-
-    p{
-      font-size: 16px;
-    }
-
+  height: 695px;
   }
 
 .build{
   margin-top: -40px;
   height: 900px;
   background: #fff;
-    p{
-      font-size: 16px;
-    }
   }
 
 .quality{
   margin-top: -40px;
   height: 900px;
   background: #fafafa;
-      p{
-      font-size: 16px;
-    }
   }
 
 .memory{
   margin-top: -40px;
   height: 600px;
   background: #555;
-      p{
-      font-size: 16px;
-    }
   }
 
 .accessories{
@@ -144,35 +102,32 @@ padding-bottom:30px;
   height: 680px;
   }
 
+//
+//CTA settings
+//
 .jumbotron{
-
   margin-bottom: 0px;
-
 }
 
 .jumbotron.cta{
-
   width: 100%;
   height: 720px;
-  // margin-top: 65px;
   background: url(../images/83H.jpg)  no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   @include forScreen($tablet){
-      background-position:0px;
-      height: 500px;
-      width: 100%;
-      p{font-size:19px;}
+    background-position:0px;
+    height: 500px;
+    width: 100%;
+    p{font-size:19px;}
   }
-
-    @include forScreen($phone){
-      background-position:0px;
-      height: 300px;
-      width: 100%;
-      p{font-size:19px;}
+  @include forScreen($phone){
+    background-position:0px;
+    height: 300px;
+    width: 100%;
+    p{font-size:19px;}
   }
 }
 

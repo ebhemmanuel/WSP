@@ -16,26 +16,14 @@ html
 
 		//- Header and Nav
 		//- ___________________________.navbar-fixed-top
-		include includes/nav
+		include includes/_nav
 
 		//- Main Product Details
 		//- ___________________________
-		.jumbotron.overview
-			.container.col-md-push-4
-				h1 Leica T
-				.row
-					.col-sm-4
-						p
-							| Take pictures and share them. Quickly and easily. By email, or on Facebook and other social networks. All you have to do is download the free Leica T app to your iOS device.
-				.row
-					.col-md-2
-						h2 $1,999
-					.col-md-2
-						h3 Buy Now
+		include uncludes/_prductDetails
 
 		//-Product Features
 		//-___________________________
-
 		.jumbotron.build
 			.container
 				h2 Clean design.
@@ -62,15 +50,12 @@ html
 
 		//-Product Accessories
 		//-___________________________
-		include includes/accessories
+		include includes/views/accessories
 
 
 		//-Footer
 		//-___________________________
-		include includes/footer
-
-		script(src='public/js/jquery-1.11.1.min.js')
-		script(src='public/js/bootstrap.min.js')
-		script document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+		include includes/_footer
+		include includes/_js
 
 
