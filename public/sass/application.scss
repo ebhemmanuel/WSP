@@ -16,27 +16,41 @@
 
 
 body {
-  background: $white;
+  background   : $white;
   }
 
+.phoneView{
+  display      : none;
+}
+
 .placeholder-thumbnail{
-  display: block;
-  height: 140px;
-  width: 140px;
-  background: #999;
-  margin-left: auto;
-  margin-right:auto;
+  display      : block;
+  height       : $thumnailSize;
+  width        : $thumnailSize;
+  background   : #999;
+  margin-left  : auto;
+  margin-right : auto;
+  margin-bottom: $thumbnailPadding;
+  margin-top   : $thumbnailPadding;
 }
 
 .highlight{
-  display: block;
-  background:$white;
-  color:$black;
-  padding: $paddingH;
+  display      : block;
+  background   : $white;
+  color        : $black;
+  padding      : $paddingH;
+}
+
+.resetLeft{
+  margin-left  : 0;
+  padding-left : 0;
+}
+.resetBottom{
+  margin-bottom: 0px;
 }
 
 .pushDown{
-  margin-top: 220px;
+  margin-top   : 220px;
 }
 
 .space{
@@ -44,93 +58,113 @@ body {
 }
 
 #footer{
-  background: $red;
-  height: 60px;
-  padding-top: 20px;
-  color: $white;
+  background  : $red;
+  height      : 60px;
+  padding-top : 20px;
+  color       : $white;
     ul li{
-      padding-right:15px;
-      display: inline;
+      padding-right   :15px;
+      display         : inline;
     }
 }
 
 .smallerText{
-  font-size: 16px;
+  font-size     : 16px;
 }
 
 .support{
-  height: 480px;
-  background:#F2F2F2;
-  margin-bottom: 0px;
+  height        : 480px;
+  background    :#F2F2F2;
+  margin-bottom : 0px;
 }
 
 .footer{
   a{
-    color: $white;
+    color       : $white;
     }
   }
 
 .signup{
-  height: 695px;
+  height        : 695px;
   }
 
 .overview{
-  height: 695px;
+  height        : 695px;
   }
 
 .build{
-  margin-top: -40px;
-  height: 900px;
-  background: #fff;
+  margin-top    : -40px;
+  height        : 900px;
+  background    : #fff;
   }
 
 .quality{
-  margin-top: -40px;
-  height: 900px;
-  background: #fafafa;
+  margin-top    : -40px;
+  height        : 900px;
+  background    : #fafafa;
   }
 
 .memory{
-  margin-top: -40px;
-  height: 600px;
-  background: #555;
+  margin-top    : -40px;
+  height        : 600px;
+  background    : #555;
   }
 
 .accessories{
-  margin-top: -40px;
-  margin-bottom: -40px;
-  height: 680px;
+  margin-top    : -40px;
+  margin-bottom : -40px;
+  height        : 680px;
   }
 
 //
 //CTA settings
 //
-.jumbotron{
-  margin-bottom: 0px;
-}
 
-.jumbotron.cta{
-  width: 100%;
-  height: 720px;
-  background: url(../images/83H.jpg)  no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  @include forScreen($tablet){
-    background-position:0px;
-    height: 500px;
-    width: 100%;
-    p{font-size:19px;}
+.cta{
+  width                   : 100%;
+  height                  : 500px;
+  background              : url(../images/83H.jpg)  no-repeat center center;
+  -webkit-background-size : cover;
+  -moz-background-size    : cover;
+  -o-background-size      : cover;
+  background-size         : cover;
   }
-  @include forScreen($phone){
-    background-position:0px;
-    height: 300px;
-    width: 100%;
-    p{font-size:19px;}
+
+//
+//Tablet Settings
+//
+@include forScreen($tablet){
+  .cta{
+    background-position  : 0px;
+    height               : 500px;
+    width                : 100%;
+    p{
+      font-size          :19px;
+    }
   }
 }
+//
+//Phone Settings
+//
 
-
+@include forScreen($phone){
+    .desktopView{
+      display: none
+    }
+    .phoneView{
+      display: block;
+    }
+    .pushDown{
+      margin-top: 100px;
+    }
+    .cta{
+      background-position:0px;
+      height: 300px;
+      width: 100%;
+      p{
+        font-size: 16px;
+      }
+    }
+  }
 
 
