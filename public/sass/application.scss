@@ -149,20 +149,20 @@ body {
 
 @include forScreen($phone){
     .desktopView{
-      display: none
+      display    : none
     }
     .phoneView{
-      display: block;
+      display    : block
     }
     .pushDown{
-      margin-top: 100px;
+      margin-top : 100px
     }
     .cta{
-      background-position:0px;
-      height: 300px;
-      width: 100%;
+      background-position   : 0px;
+      height                : 300px;
+      width                 : 100%;
       p{
-        font-size: 16px;
+        font-size           : 16px;
       }
     }
   }
