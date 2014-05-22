@@ -1,5 +1,6 @@
 //
 // Globals = persistant dom layout across pages
+@import 'compass/css3';
 @import 'globals/variables';
 //
 // Includes = persistent aesthetic styling across pages
@@ -62,10 +63,11 @@ body {
   height      : 60px;
   padding-top : 20px;
   color       : $white;
-    ul li{
-      padding-right   :15px;
-      display         : inline;
-    }
+
+  ul li {
+    padding-right   :15px;
+    display         : inline;
+  }
 }
 
 .smallerText{
@@ -124,10 +126,7 @@ body {
   width                   : 100%;
   height                  : 500px;
   background              : url(../images/83H.jpg)  no-repeat center center;
-  -webkit-background-size : cover;
-  -moz-background-size    : cover;
-  -o-background-size      : cover;
-  background-size         : cover;
+  @include background-size(cover);
   }
 
 //
