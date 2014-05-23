@@ -1,0 +1,22 @@
+//
+//Phone Settings
+//
+@include forScreen($phone){
+  .desktopView{
+   display    : none
+  }
+  .phoneView{
+   display    : block
+  }
+  .pushDown{
+   margin-top : 100px
+  }
+  .cta{
+   background-position   : 0;
+   height                : 300px;
+   width                 : 100%;
+   p{
+    font-size           : 16px;
+   }
+  }
+ }

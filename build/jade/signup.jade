@@ -1,0 +1,48 @@
+doctype html
+html
+	head
+		title Lecia Camera AG
+		meta(charset="utf-8")
+		meta(description="Mycamera website")
+		meta(keywords="cage, boom, brim")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+		link(href="public/css/bootstrap.min.css" rel="stylesheet")
+		link(href="public/css/bootstrap-theme.min.css" rel="stylesheet")
+		link(href="public/css/application.css" rel="stylesheet")
+		link(href="http://fonts.googleapis.com/css?family=Open Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic;" rel="stylesheet" type="text/css")
+
+	body
+
+		//- Header and Nav
+		//- ___________________________
+		include includes/_nav
+
+		//-Sign Up
+		//-_______________
+		.container-fluid.signup
+			.row
+				.col-xs-8.col-xs-push-2.col-md-2.col-md-push-5
+					form(role="form")
+						.form-group
+							label(for="fullname")
+								| Full Name
+							input#fullname.form-control(type="name")(placerholder="Full Name")
+						.form-group
+							label(for="email")
+								| Email Address
+							input#email.form-control(type="email")(placerholder="Enter email")
+						.form-group
+							label(for="password")
+								| Password
+							input#password.form-control(type="Password")(placerholder="Password")
+						.form-group
+							.col-sm-offset-2.col-sm-10
+							a.highlight.text-center(href="#")(type="submit")
+								| Sign Up
+		//-Footer
+		//-___________________________
+		include includes/_footer
+		include includes/_js
+
+

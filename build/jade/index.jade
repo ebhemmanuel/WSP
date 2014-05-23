@@ -1,0 +1,46 @@
+doctype html
+html
+	head
+		title Lecia Camera AG
+		meta(charset="utf-8")
+		meta(description="Mycamera website")
+		meta(keywords="cage, boom, brim")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+		link(href="public/css/bootstrap.min.css" rel="stylesheet")
+		link(href="public/css/bootstrap-theme.min.css" rel="stylesheet")
+		link(href="public/css/application.css" rel="stylesheet")
+		link(href="http://fonts.googleapis.com/css?family=Open Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic;" rel="stylesheet" type="text/css")
+
+	body
+		//- Header and Nav
+		//- ___________________________.navbar-fixed-top
+		include includes/_nav
+
+		//- Big picture CTA
+		//- ___________________________
+		.jumbotron.cta.resetBottom
+				.row
+					.col-xs-12.col-md-4.col-md-push-4.pushDown.text-center
+						h1.highlight Leica World
+						a(href="signup.html").highlight Sign Up
+
+		.container.text-center.desktopView
+			.row
+				.col-md-10.col-md-push-2
+					.col-xs-4.col-sm-3.col-md-3
+						img.img-rounded.placeholder-thumbnail
+						p.space Designed from the ground up as tools for creating completely unique visual
+					.col-xs-4.col-sm-3.col-md-3
+						img.img-rounded.placeholder-thumbnail
+						p.space Designed from the ground up as tools for creating completely unique visual
+					.col-xs-4.col-sm-3.col-md-3
+						img.img-rounded.placeholder-thumbnail
+						p.space Designed from the ground up as tools for creating completely unique visual
+
+		//-Footer
+		//-___________________________
+		include includes/_footer
+		include includes/_js
+
+
