@@ -23,42 +23,44 @@ nav{
  height             : $navDesktopHeight;
 
   ul{
-   margin-left: 30px;
-   margin-top: $lh;
-   list-style-type: none;
+   margin-left      : 30px;
+   margin-top       : $lineheight;
+   list-style-type  : none;
 
   li {
-   display: inline;
-   padding: 0 15px;
+   display          : inline;
+   padding          : 0 15px;
    }
  }
  //Small Screen (Desktop) Settings
  @include forScreen($smallScreen){
   .container{
-    width: 800px;
+    width           : 800px;
    }
   .navbar>.container .navbar-brand{
-    margin-left: -110px;
+    margin-left     : -110px;
     }
  }
 
  //Desktop Settings
  @include forScreen($mediumScreen){
- .container{width: 970px;}
+  .container{
+    width           : 970px;
+  }
  }
 
 
   //Tablet Settings
  @include forScreen($tablet){
-  padding-top: $paddingTabletNav;
-  line-height: $lineheightTabletNav;
-  height: $navDesktopHeight;
-  font-weight:lighter;
+  padding-top       : $paddingTabletNav;
+  line-height       : $lineheightTabletNav;
+  height            : $navDesktopHeight;
+  font-weight       : lighter;
   label{
-  display             : inline-block;
-  font-size           : 3.5em;
-  font-weight         : lighter;
-  margin-left         : -20px;
+  display           : inline-block;
+  font-size         : 3.5em;
+  font-weight       : lighter;
+  margin-left       : -20px;
   }
  }
 

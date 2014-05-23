@@ -1,78 +1,334 @@
-/*
-Syntax error: Undefined variable: "$lh".
-        on line 27 of /Applications/MAMP/htdocs/WSP/build/sass/globals/_navigation.scss
-        from line 16 of /Applications/MAMP/htdocs/WSP/build/sass/application.scss
+/* line 4, ../../build/sass/includes/_resets.scss */
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
 
-Backtrace:
-/Applications/MAMP/htdocs/WSP/build/sass/globals/_navigation.scss:27
-/Applications/MAMP/htdocs/WSP/build/sass/application.scss:16
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/update_project.rb:45:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `call'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$lh\".\A         on line 27 of /Applications/MAMP/htdocs/WSP/build/sass/globals/_navigation.scss\A         from line 16 of /Applications/MAMP/htdocs/WSP/build/sass/application.scss"; }
+/* line 2, ../../build/sass/includes/_fonts.scss */
+a {
+  color: #333333;
+}
+/* line 5, ../../build/sass/includes/_fonts.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("opensans-bold-webfont.eot");
+  src: url("opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-bold-webfont.woff") format("woff"), url("opensans-bold-webfont.ttf") format("truetype"), url("opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansextrabold';
+  src: url("opensans-extrabold-webfont.eot");
+  src: url("opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-extrabold-webfont.woff") format("woff"), url("opensans-extrabold-webfont.ttf") format("truetype"), url("opensans-extrabold-webfont.svg#open_sansextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url("opensans-italic-webfont.eot");
+  src: url("opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-italic-webfont.woff") format("woff"), url("opensans-italic-webfont.ttf") format("truetype"), url("opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanslight_italic';
+  src: url("opensans-lightitalic-webfont.eot");
+  src: url("opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-lightitalic-webfont.woff") format("woff"), url("opensans-lightitalic-webfont.ttf") format("truetype"), url("opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("opensans-regular-webfont.eot");
+  src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-regular-webfont.woff") format("woff"), url("opensans-regular-webfont.ttf") format("truetype"), url("opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("opensans-semibold-webfont.eot");
+  src: url("opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-semibold-webfont.woff") format("woff"), url("opensans-semibold-webfont.ttf") format("truetype"), url("opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 16, ../../build/sass/globals/_navigation.scss */
+.navbar {
+  margin-bottom: 0px;
+}
+
+/* line 20, ../../build/sass/globals/_navigation.scss */
+nav {
+  padding-top: 10px;
+  background: white;
+  height: 65px;
+}
+/* line 25, ../../build/sass/globals/_navigation.scss */
+nav ul {
+  margin-left: 30px;
+  margin-top: -70px;
+  list-style-type: none;
+}
+/* line 30, ../../build/sass/globals/_navigation.scss */
+nav ul li {
+  display: inline;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  /* line 37, ../../build/sass/globals/_navigation.scss */
+  nav .container {
+    width: 800px;
+  }
+  /* line 40, ../../build/sass/globals/_navigation.scss */
+  nav .navbar > .container .navbar-brand {
+    margin-left: -110px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 47, ../../build/sass/globals/_navigation.scss */
+  nav .container {
+    width: 970px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
+  /* line 20, ../../build/sass/globals/_navigation.scss */
+  nav {
+    padding-top: 10px;
+    line-height: 48px;
+    height: 65px;
+    font-weight: lighter;
+  }
+  /* line 59, ../../build/sass/globals/_navigation.scss */
+  nav label {
+    display: inline-block;
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin-left: -20px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  /* line 20, ../../build/sass/globals/_navigation.scss */
+  nav {
+    height: 65px;
+    padding-top: 13px;
+    line-height: 45px;
+  }
+  /* line 73, ../../build/sass/globals/_navigation.scss */
+  nav label {
+    display: inline-block;
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin-left: -20px;
+  }
+}
+
+/* line 19, ../../build/sass/application.scss */
+body {
+  background: white;
+}
+
+/* line 23, ../../build/sass/application.scss */
+.phoneView {
+  display: none;
+}
+
+/* line 27, ../../build/sass/application.scss */
+.placeholder-thumbnail {
+  display: block;
+  height: 140px;
+  width: 140px;
+  background: #999;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 38, ../../build/sass/application.scss */
+.highlight {
+  display: block;
+  background: white;
+  color: #333333;
+  padding: 10px;
+}
+
+/* line 45, ../../build/sass/application.scss */
+.resetLeft {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 49, ../../build/sass/application.scss */
+.resetBottom {
+  margin-bottom: 0px;
+}
+
+/* line 53, ../../build/sass/application.scss */
+.pushDown {
+  margin-top: 220px;
+}
+
+/* line 57, ../../build/sass/application.scss */
+.space {
+  padding-bottom: 30px;
+}
+
+/* line 61, ../../build/sass/application.scss */
+#footer {
+  margin-top: 5px;
+  background: #ed1c24;
+  height: 60px;
+  padding-top: 20px;
+  color: white;
+}
+/* line 68, ../../build/sass/application.scss */
+#footer a {
+  color: white;
+}
+/* line 72, ../../build/sass/application.scss */
+#footer ul li {
+  padding-right: 15px;
+  display: inline;
+}
+
+/* line 78, ../../build/sass/application.scss */
+.smallerText {
+  font-size: 16px;
+}
+
+/* line 82, ../../build/sass/application.scss */
+.build, .quality {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 760px;
+  margin-bottom: 0;
+}
+
+/* line 88, ../../build/sass/application.scss */
+.overview, .memory {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 595px;
+  margin-bottom: 0;
+}
+
+/* line 94, ../../build/sass/application.scss */
+.signup {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 675px;
+  margin-bottom: 0;
+}
+
+/* line 100, ../../build/sass/application.scss */
+.overview {
+  background: white;
+}
+
+/* line 105, ../../build/sass/application.scss */
+.build {
+  background: #333333;
+}
+
+/* line 110, ../../build/sass/application.scss */
+.quality {
+  background: #fafafa;
+}
+
+/* line 115, ../../build/sass/application.scss */
+.memory {
+  height: 600px;
+  background: #555;
+}
+
+/* line 121, ../../build/sass/application.scss */
+.accessories {
+  height: 680px;
+}
+
+/* line 126, ../../build/sass/application.scss */
+.support {
+  height: 480px;
+  background: #F2F2F2;
+  margin-bottom: 0px;
+}
+
+/* line 132, ../../build/sass/application.scss */
+.signup {
+  margin-bottom: 0;
+  padding-top: 120px;
+  background: #f9f9f9;
+}
+/* line 137, ../../build/sass/application.scss */
+.signup .highlight {
+  letter-spacing: 2px;
+  font-size: 16px;
+  background-color: #ed1c24;
+  color: white;
+}
+
+/* line 149, ../../build/sass/application.scss */
+.cta {
+  width: 100%;
+  height: 500px;
+  background: url(../images/83H.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
+  /* line 5, ../../build/sass/views/_tablet.scss */
+  .cta {
+    background-position: 0;
+    height: 500px;
+    width: 100%;
+  }
+  /* line 9, ../../build/sass/views/_tablet.scss */
+  .cta p {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  /* line 5, ../../build/sass/views/_phone.scss */
+  .desktopView {
+    display: none;
+  }
+
+  /* line 8, ../../build/sass/views/_phone.scss */
+  .phoneView {
+    display: block;
+  }
+
+  /* line 11, ../../build/sass/views/_phone.scss */
+  .pushDown {
+    margin-top: 100px;
+  }
+
+  /* line 14, ../../build/sass/views/_phone.scss */
+  .cta {
+    background-position: 0;
+    height: 300px;
+    width: 100%;
+  }
+  /* line 18, ../../build/sass/views/_phone.scss */
+  .cta p {
+    font-size: 16px;
+  }
+}
