@@ -1,0 +1,157 @@
+//
+// Globals = persistant dom layout across pages
+@import 'compass/css3';
+@import 'globals/variables';
+//
+// Includes = persistent aesthetic styling across pages
+//
+@import 'includes/resets';
+@import 'includes/colors';
+@import 'includes/fonts';
+//
+// Mixins
+//
+@import 'mixins/responsive';
+//
+@import 'globals/navigation';
+
+
+body {
+  background   : $white;
+  }
+
+.phoneView{
+  display      : none;
+}
+
+.placeholder-thumbnail{
+  display      : block;
+  height       : $thumnailSize;
+  width        : $thumnailSize;
+  background   : #999;
+  margin-left  : auto;
+  margin-right : auto;
+  margin-bottom: $thumbnailPadding;
+  margin-top   : $thumbnailPadding;
+}
+
+.highlight{
+  display      : block;
+  background   : $white;
+  color        : $black;
+  padding      : $paddingH;
+}
+
+.resetLeft{
+  margin-left  : 0;
+  padding-left : 0;
+}
+.resetBottom{
+  margin-bottom: 0px;
+}
+
+.pushDown{
+  margin-top   : 220px;
+}
+
+.space{
+  padding-bottom: 30px;
+}
+
+#footer{
+  margin-top  : 5px;
+  background  : $red;
+  height      : 60px;
+  padding-top : 20px;
+  color       : $white;
+
+  a{
+    color       : $white;
+    }
+
+  ul li {
+    padding-right   : 15px;
+    display         : inline;
+  }
+}
+
+.smallerText{
+  font-size     : 16px;
+}
+
+%feature-block{
+  @include background-size;
+  height        : 760px;
+  margin-bottom : 0;
+  }
+
+%detail-block{
+  @include background-size;
+  height        : 595px;
+  margin-bottom : 0;
+}
+
+%signup-block{
+  @include background-size;
+  height        : 675px;
+  margin-bottom : 0;
+}
+
+.overview{
+  @extend %detail-block;
+  background    : $white;
+}
+
+.build{
+  @extend %feature-block;
+  background    : $black;
+}
+
+.quality{
+  @extend %feature-block;
+  background    : #fafafa;
+  }
+
+.memory{
+  @extend %detail-block;
+  height        : 600px;
+  background    : #555;
+  }
+
+.accessories{
+
+  height        : 680px;
+  }
+
+.support{
+  height        : 480px;
+  background    :#F2F2F2;
+  margin-bottom : 0px;
+}
+
+.signup{
+  @extend %signup-block;
+  margin-bottom     : 0;
+  padding-top       : 120px;
+  background        : #f9f9f9;
+  .highlight{
+    letter-spacing  : 2px;
+    font-size       : 16px;
+    background-color: $red;
+    color           : $white;
+  }
+}
+
+//
+//CTA settings
+//
+
+.cta{
+  width                   : 100%;
+  height                  : 500px;
+  background              : url(../images/83H.jpg)  no-repeat center center;
+  @include background-size(cover);
+  }
+
+@import 'views/tablet';
+@import 'views/phone';
