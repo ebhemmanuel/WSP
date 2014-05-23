@@ -10,12 +10,18 @@ $lineheight          : -70px;
 $navDesktopHeight    : 65px;
 $navPhoneHeight      : 65px;
 $navTabletHeight     : 160px;
-
+$logoSize            : 100%;
+//
 // Navigation
-
+//
 .navbar{
-  margin-bottom      : 0px;
+ margin-bottom       : 0px;
  }
+.logo{
+ width               : $logoSize;
+ height              : $logoSize;
+ margin-top          : -5px;
+}
 
 nav{
  padding-top         : $paddingDesktopNav;
@@ -46,34 +52,6 @@ nav{
  @include forScreen($mediumScreen){
   .container{
    width             : 970px;
-  }
- }
-
-
-  //Tablet Settings
- @include forScreen($tablet){
-  padding-top        : $paddingTabletNav;
-  line-height        : $lineheightTabletNav;
-  height             : $navDesktopHeight;
-  font-weight        : lighter;
-  label{
-   display           : inline-block;
-   font-size         : 3.5em;
-   font-weight       : lighter;
-   margin-left       : -20px;
-  }
- }
-
- //Phone Settings
- @include forScreen($phone){
-  height             : $navPhoneHeight;
-  padding-top        : $paddingPhoneNav;
-  line-height        : $linehPhoneNav;
-  label{
-   display           : inline-block;
-   font-size         : 3.5em;
-   font-weight       : lighter;
-   margin-left       : -20px;
   }
  }
 }
