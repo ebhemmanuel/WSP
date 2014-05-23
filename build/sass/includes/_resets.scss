@@ -5,3 +5,31 @@ ul, ol, li {
   margin: 0;
   padding: 0;
 }
+
+//Thumbnail
+.placeholder-thumbnail{
+  display           : block;
+  height            : $thumnailSize;
+  width             : $thumnailSize;
+  background        : #999;
+  margin-left       : auto;
+  margin-right      : auto;
+  margin-bottom     : $thumbnailPadding;
+  margin-top        : $thumbnailPadding;
+}
+
+.resetLeft{
+  margin-left       : 0;
+  padding-left      : 0;
+}
+.resetBottom{
+  margin-bottom     : 0px;
+}
+
+.pushDown{
+  margin-top        : 220px;
+}
+
+.space{
+  padding-bottom    : 30px;
+}
