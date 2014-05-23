@@ -17,56 +17,56 @@
 
 
 body {
-  background   : $white;
+  background        : $white;
   }
 
 .phoneView{
-  display      : none;
+  display           : none;
 }
 
 .placeholder-thumbnail{
-  display      : block;
-  height       : $thumnailSize;
-  width        : $thumnailSize;
-  background   : #999;
-  margin-left  : auto;
-  margin-right : auto;
-  margin-bottom: $thumbnailPadding;
-  margin-top   : $thumbnailPadding;
+  display           : block;
+  height            : $thumnailSize;
+  width             : $thumnailSize;
+  background        : #999;
+  margin-left       : auto;
+  margin-right      : auto;
+  margin-bottom     : $thumbnailPadding;
+  margin-top        : $thumbnailPadding;
 }
 
 .highlight{
-  display      : block;
-  background   : $white;
-  color        : $black;
-  padding      : $paddingH;
+  display           : block;
+  background        : $white;
+  color             : $black;
+  padding           : $paddingH;
 }
 
 .resetLeft{
-  margin-left  : 0;
-  padding-left : 0;
+  margin-left       : 0;
+  padding-left      : 0;
 }
 .resetBottom{
-  margin-bottom: 0px;
+  margin-bottom     : 0px;
 }
 
 .pushDown{
-  margin-top   : 220px;
+  margin-top        : 220px;
 }
 
 .space{
-  padding-bottom: 30px;
+  padding-bottom    : 30px;
 }
 
 #footer{
-  margin-top  : 5px;
-  background  : $red;
-  height      : 60px;
-  padding-top : 20px;
-  color       : $white;
+  margin-top        : 5px;
+  background        : $red;
+  height            : 60px;
+  padding-top       : 20px;
+  color             : $white;
 
   a{
-    color       : $white;
+    color           : $white;
     }
 
   ul li {
@@ -76,57 +76,57 @@ body {
 }
 
 .smallerText{
-  font-size     : 16px;
+  font-size         : 16px;
 }
 
 %feature-block{
   @include background-size;
-  height        : 760px;
-  margin-bottom : 0;
+  height            : 760px;
+  margin-bottom     : 0;
   }
 
 %detail-block{
   @include background-size;
-  height        : 595px;
-  margin-bottom : 0;
+  height            : 595px;
+  margin-bottom     : 0;
 }
 
 %signup-block{
   @include background-size;
-  height        : 675px;
-  margin-bottom : 0;
+  height            : 675px;
+  margin-bottom     : 0;
 }
 
 .overview{
   @extend %detail-block;
-  background    : $white;
+  background        : $white;
 }
 
 .build{
   @extend %feature-block;
-  background    : $black;
+  background        : $black;
 }
 
 .quality{
   @extend %feature-block;
-  background    : #fafafa;
+  background        : #fafafa;
   }
 
 .memory{
   @extend %detail-block;
-  height        : 600px;
-  background    : #555;
+  height            : 600px;
+  background        : #555;
   }
 
 .accessories{
 
-  height        : 680px;
+  height            : 680px;
   }
 
 .support{
-  height        : 480px;
-  background    :#F2F2F2;
-  margin-bottom : 0px;
+  height            : 480px;
+  background        :#F2F2F2;
+  margin-bottom     : 0px;
 }
 
 .signup{
@@ -141,17 +141,15 @@ body {
     color           : $white;
   }
 }
-
 //
 //CTA settings
 //
-
 .cta{
-  width                   : 100%;
-  height                  : 500px;
-  background              : url(../images/83H.jpg)  no-repeat center center;
+  width             : 100%;
+  height            : 500px;
+  background        : url(../images/83H.jpg)  no-repeat center center;
   @include background-size(cover);
   }
-
+//
 @import 'views/tablet';
 @import 'views/phone';
