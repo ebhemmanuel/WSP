@@ -15,33 +15,31 @@ html
 	body
 
 		//- Header and Nav
-		//- ___________________________.navbar-fixed-top
+		//- ___________________________
 		include includes/_nav
 
 		//-Sign Up
 		//-_______________
-		.jumbotron.signup
-			.container
-				.row
-					.col-md-4
-					.col-md-3.pushDown
-						form(role="form")
-							.form-group
-								label(for="fullname")
-									| Full Name
-								input#fullname.form-control(type="name")(placerholder="Full Name")
-							.form-group
-								label(for="email")
-									| Email Address
-								input#email.form-control(type="email")(placerholder="Enter email")
-							.form-group
-								label(for="password")
-									| Password
-								input#password.form-control(type="Password")(placerholder="Password")
-							.form-group
-								.col-sm-offset-2.col-sm-10
-								button.btn.btn-default(type="submit")
-									| Sign Up
+		.container-fluid.signup
+			.row
+				.col-xs-8.col-xs-push-2.col-md-2.col-md-push-5
+					form(role="form")
+						.form-group
+							label(for="fullname")
+								| Full Name
+							input#fullname.form-control(type="name")(placerholder="Full Name")
+						.form-group
+							label(for="email")
+								| Email Address
+							input#email.form-control(type="email")(placerholder="Enter email")
+						.form-group
+							label(for="password")
+								| Password
+							input#password.form-control(type="Password")(placerholder="Password")
+						.form-group
+							.col-sm-offset-2.col-sm-10
+							a.highlight.text-center(href="#")(type="submit")
+								| Sign Up
 		//-Footer
 		//-___________________________
 		include includes/_footer

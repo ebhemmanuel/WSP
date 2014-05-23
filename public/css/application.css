@@ -191,73 +191,105 @@ body {
 
 /* line 61, ../sass/application.scss */
 #footer {
+  margin-top: 5px;
   background: #ed1c24;
   height: 60px;
   padding-top: 20px;
   color: white;
 }
-/* line 67, ../sass/application.scss */
+/* line 68, ../sass/application.scss */
+#footer a {
+  color: white;
+}
+/* line 72, ../sass/application.scss */
 #footer ul li {
   padding-right: 15px;
   display: inline;
 }
 
-/* line 73, ../sass/application.scss */
+/* line 78, ../sass/application.scss */
 .smallerText {
   font-size: 16px;
 }
 
-/* line 77, ../sass/application.scss */
+/* line 82, ../sass/application.scss */
+.build, .quality {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 760px;
+  margin-bottom: 0;
+}
+
+/* line 88, ../sass/application.scss */
+.overview, .memory {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 595px;
+  margin-bottom: 0;
+}
+
+/* line 94, ../sass/application.scss */
+.signup {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 675px;
+  margin-bottom: 0;
+}
+
+/* line 100, ../sass/application.scss */
+.overview {
+  background: white;
+}
+
+/* line 105, ../sass/application.scss */
+.build {
+  background: #333333;
+}
+
+/* line 110, ../sass/application.scss */
+.quality {
+  background: #fafafa;
+}
+
+/* line 115, ../sass/application.scss */
+.memory {
+  height: 600px;
+  background: #555;
+}
+
+/* line 121, ../sass/application.scss */
+.accessories {
+  height: 680px;
+}
+
+/* line 126, ../sass/application.scss */
 .support {
   height: 480px;
   background: #F2F2F2;
   margin-bottom: 0px;
 }
 
-/* line 84, ../sass/application.scss */
-.footer a {
+/* line 132, ../sass/application.scss */
+.signup {
+  margin-bottom: 0;
+  padding-top: 120px;
+  background: #f9f9f9;
+}
+/* line 137, ../sass/application.scss */
+.signup .highlight {
+  letter-spacing: 2px;
+  font-size: 16px;
+  background-color: #ed1c24;
   color: white;
 }
 
-/* line 89, ../sass/application.scss */
-.signup {
-  height: 695px;
-}
-
-/* line 93, ../sass/application.scss */
-.overview {
-  height: 695px;
-}
-
-/* line 97, ../sass/application.scss */
-.build {
-  margin-top: -40px;
-  height: 900px;
-  background: #fff;
-}
-
-/* line 103, ../sass/application.scss */
-.quality {
-  margin-top: -40px;
-  height: 900px;
-  background: #fafafa;
-}
-
-/* line 109, ../sass/application.scss */
-.memory {
-  margin-top: -40px;
-  height: 600px;
-  background: #555;
-}
-
-/* line 115, ../sass/application.scss */
-.accessories {
-  margin-top: -40px;
-  margin-bottom: -40px;
-  height: 680px;
-}
-
-/* line 125, ../sass/application.scss */
+/* line 149, ../sass/application.scss */
 .cta {
   width: 100%;
   height: 500px;
@@ -269,40 +301,40 @@ body {
 }
 
 @media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
-  /* line 136, ../sass/application.scss */
+  /* line 5, ../sass/views/_tablet.scss */
   .cta {
-    background-position: 0px;
+    background-position: 0;
     height: 500px;
     width: 100%;
   }
-  /* line 140, ../sass/application.scss */
+  /* line 9, ../sass/views/_tablet.scss */
   .cta p {
     font-size: 19px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 400px) {
-  /* line 150, ../sass/application.scss */
+  /* line 5, ../sass/views/_phone.scss */
   .desktopView {
     display: none;
   }
 
-  /* line 153, ../sass/application.scss */
+  /* line 8, ../sass/views/_phone.scss */
   .phoneView {
     display: block;
   }
 
-  /* line 156, ../sass/application.scss */
+  /* line 11, ../sass/views/_phone.scss */
   .pushDown {
     margin-top: 100px;
   }
 
-  /* line 159, ../sass/application.scss */
+  /* line 14, ../sass/views/_phone.scss */
   .cta {
-    background-position: 0px;
+    background-position: 0;
     height: 300px;
     width: 100%;
   }
-  /* line 163, ../sass/application.scss */
+  /* line 18, ../sass/views/_phone.scss */
   .cta p {
     font-size: 16px;
   }

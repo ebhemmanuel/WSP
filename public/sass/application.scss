@@ -59,13 +59,18 @@ body {
 }
 
 #footer{
+  margin-top  : 5px;
   background  : $red;
   height      : 60px;
   padding-top : 20px;
   color       : $white;
 
+  a{
+    color       : $white;
+    }
+
   ul li {
-    padding-right   :15px;
+    padding-right   : 15px;
     display         : inline;
   }
 }
@@ -74,49 +79,68 @@ body {
   font-size     : 16px;
 }
 
+%feature-block{
+  @include background-size;
+  height        : 760px;
+  margin-bottom : 0;
+  }
+
+%detail-block{
+  @include background-size;
+  height        : 595px;
+  margin-bottom : 0;
+}
+
+%signup-block{
+  @include background-size;
+  height        : 675px;
+  margin-bottom : 0;
+}
+
+.overview{
+  @extend %detail-block;
+  background    : $white;
+}
+
+.build{
+  @extend %feature-block;
+  background    : $black;
+}
+
+.quality{
+  @extend %feature-block;
+  background    : #fafafa;
+  }
+
+.memory{
+  @extend %detail-block;
+  height        : 600px;
+  background    : #555;
+  }
+
+.accessories{
+
+  height        : 680px;
+  }
+
 .support{
   height        : 480px;
   background    :#F2F2F2;
   margin-bottom : 0px;
 }
 
-.footer{
-  a{
-    color       : $white;
-    }
-  }
-
 .signup{
-  height        : 695px;
+  @extend %signup-block;
+  margin-bottom     : 0;
+  padding-top       : 120px;
+  background        : #f9f9f9;
+  .highlight{
+    letter-spacing  : 2px;
+    font-size       : 16px;
+    background-color: $red;
+    color           : $white;
   }
-
-.overview{
-  height        : 695px;
-  }
-
-.build{
-  margin-top    : -40px;
-  height        : 900px;
-  background    : #fff;
-  }
-
-.quality{
-  margin-top    : -40px;
-  height        : 900px;
-  background    : #fafafa;
-  }
-
-.memory{
-  margin-top    : -40px;
-  height        : 600px;
-  background    : #555;
-  }
-
-.accessories{
-  margin-top    : -40px;
-  margin-bottom : -40px;
-  height        : 680px;
-  }
+}
 
 //
 //CTA settings
@@ -129,41 +153,5 @@ body {
   @include background-size(cover);
   }
 
-//
-//Tablet Settings
-//
-@include forScreen($tablet){
-  .cta{
-    background-position  : 0px;
-    height               : 500px;
-    width                : 100%;
-    p{
-      font-size          :19px;
-    }
-  }
-}
-//
-//Phone Settings
-//
-
-@include forScreen($phone){
-    .desktopView{
-      display    : none
-    }
-    .phoneView{
-      display    : block
-    }
-    .pushDown{
-      margin-top : 100px
-    }
-    .cta{
-      background-position   : 0px;
-      height                : 300px;
-      width                 : 100%;
-      p{
-        font-size           : 16px;
-      }
-    }
-  }
-
-
+@import 'views/tablet';
+@import 'views/phone';
