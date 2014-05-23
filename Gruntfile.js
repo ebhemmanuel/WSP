@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 		watch:{
 
 			css: {
-				files: 'public/sass/**/*.scss', // look in public sass, and within any sub directory for any scss
+				files: 'build/sass/**/*.scss', // look in public sass, and within any sub directory for any scss
 				tasks: 'compass',
 				option: {
 					livereload: true //can change it to a specific port
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 			},
 
 			jade: {
-				files: 'public/jade/**/*.jade', // look in public jade, and within any sub directory for any jade
+				files: 'build/jade/**/*.jade', // look in public jade, and within any sub directory for any jade
 				tasks: 'jade',
 				option: {
 					livereload: true //can change it to a specific port
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 		compass: {
 			compile:{
 				options: {
-					sassDir: 'public/sass',
+					sassDir: 'build/sass',
 					cssDir: 'public/css'
 				}
 			}
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: 'public/jade',
+					cwd: 'build/jade',
 					src: '**/*.jade',
 					dest: '',
 					ext: '.html'
