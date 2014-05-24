@@ -18,9 +18,7 @@
 // Default on.
 //
 
-
 $heightReset: -125px;
-
 
  html, body {
   background        : $white;
@@ -82,7 +80,6 @@ $heightReset: -125px;
 }
 
 .content-hold{
-
   height            : 36.5%;
 }
 
@@ -98,6 +95,7 @@ $heightReset: -125px;
 .build{
   @extend %feature-block;
   background        : $black;
+
 }
 
 .quality{
@@ -152,3 +150,4 @@ $heightReset: -125px;
 //
 @import 'views/tablet';
 @import 'views/phone';
+

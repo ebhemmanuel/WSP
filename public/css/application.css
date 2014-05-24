@@ -46,64 +46,64 @@ a:hover {
   text-decoration: none !important;
 }
 
-/* line 17, ../../build/sass/globals/_navigation.scss */
+/* line 18, ../../build/sass/globals/_navigation.scss */
 .navbar {
   margin-bottom: 0px;
 }
 
-/* line 20, ../../build/sass/globals/_navigation.scss */
+/* line 21, ../../build/sass/globals/_navigation.scss */
 .logo {
   width: 100%;
   height: 100%;
   margin-top: -5px;
 }
 
-/* line 26, ../../build/sass/globals/_navigation.scss */
+/* line 27, ../../build/sass/globals/_navigation.scss */
 nav {
   padding-top: 10px;
   background: white;
   height: 65px;
 }
-/* line 31, ../../build/sass/globals/_navigation.scss */
+/* line 32, ../../build/sass/globals/_navigation.scss */
 nav ul {
   margin-left: 30px;
   margin-top: -70px;
   list-style-type: none;
 }
-/* line 36, ../../build/sass/globals/_navigation.scss */
+/* line 37, ../../build/sass/globals/_navigation.scss */
 nav ul li {
   display: inline;
   padding: 0 15px;
 }
 @media screen and (min-width: 768px) {
-  /* line 43, ../../build/sass/globals/_navigation.scss */
+  /* line 44, ../../build/sass/globals/_navigation.scss */
   nav .container {
     width: 800px;
   }
-  /* line 46, ../../build/sass/globals/_navigation.scss */
+  /* line 47, ../../build/sass/globals/_navigation.scss */
   nav .navbar > .container .navbar-brand {
     margin-left: -110px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 53, ../../build/sass/globals/_navigation.scss */
+  /* line 54, ../../build/sass/globals/_navigation.scss */
   nav .container {
     width: 970px;
   }
 }
 
-/* line 25, ../../build/sass/application.scss */
+/* line 23, ../../build/sass/application.scss */
 html, body {
   background: white;
   height: 100%;
 }
 
-/* line 30, ../../build/sass/application.scss */
+/* line 28, ../../build/sass/application.scss */
 .phoneView {
   display: none;
 }
 
-/* line 34, ../../build/sass/application.scss */
+/* line 32, ../../build/sass/application.scss */
 .highlight {
   display: block;
   background: white;
@@ -111,18 +111,18 @@ html, body {
   padding: 10px;
 }
 
-/* line 41, ../../build/sass/application.scss */
+/* line 39, ../../build/sass/application.scss */
 .smallerText {
   font-size: 16px;
 }
 
-/* line 45, ../../build/sass/application.scss */
+/* line 43, ../../build/sass/application.scss */
 .signup {
   padding-top: 350px;
   margin-top: -125px;
 }
 
-/* line 50, ../../build/sass/application.scss */
+/* line 48, ../../build/sass/application.scss */
 .build, .quality {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -132,7 +132,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 56, ../../build/sass/application.scss */
+/* line 54, ../../build/sass/application.scss */
 .overview, .memory {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -142,7 +142,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 62, ../../build/sass/application.scss */
+/* line 60, ../../build/sass/application.scss */
 .signup {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -150,12 +150,12 @@ html, body {
   background-size: 100% auto;
 }
 
-/* line 66, ../../build/sass/application.scss */
+/* line 64, ../../build/sass/application.scss */
 .main-container {
   height: 100%;
 }
 
-/* line 74, ../../build/sass/application.scss */
+/* line 72, ../../build/sass/application.scss */
 .cta {
   width: 100%;
   height: 500px;
@@ -165,43 +165,43 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 79, ../../build/sass/application.scss */
+/* line 77, ../../build/sass/application.scss */
 .cta a {
   font-size: 20px;
 }
 
-/* line 84, ../../build/sass/application.scss */
+/* line 82, ../../build/sass/application.scss */
 .content-hold {
   height: 36.5%;
 }
 
-/* line 93, ../../build/sass/application.scss */
+/* line 90, ../../build/sass/application.scss */
 .overview {
   background: white;
 }
 
-/* line 98, ../../build/sass/application.scss */
+/* line 95, ../../build/sass/application.scss */
 .build {
   background: #333333;
 }
 
-/* line 103, ../../build/sass/application.scss */
+/* line 101, ../../build/sass/application.scss */
 .quality {
   background: #fafafa;
 }
 
-/* line 108, ../../build/sass/application.scss */
+/* line 106, ../../build/sass/application.scss */
 .memory {
   height: 600px;
   background: #555;
 }
 
-/* line 114, ../../build/sass/application.scss */
+/* line 112, ../../build/sass/application.scss */
 .accessories {
   height: 680px;
 }
 
-/* line 122, ../../build/sass/application.scss */
+/* line 120, ../../build/sass/application.scss */
 .support {
   height: 100%;
   background: #F2F2F2;
@@ -209,12 +209,12 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 133, ../../build/sass/application.scss */
+/* line 131, ../../build/sass/application.scss */
 .signup {
   background: #F5F5F5;
   height: 100%;
 }
-/* line 139, ../../build/sass/application.scss */
+/* line 137, ../../build/sass/application.scss */
 .signup .highlight {
   letter-spacing: 3px;
   font-size: 16px;
