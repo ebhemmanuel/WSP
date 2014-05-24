@@ -92,29 +92,18 @@ nav ul li {
   }
 }
 
-/* line 19, ../../build/sass/application.scss */
-.phoneView {
-  display: none;
-}
-
-/* line 23, ../../build/sass/application.scss */
+/* line 25, ../../build/sass/application.scss */
 html, body {
   background: white;
   height: 100%;
 }
 
 /* line 30, ../../build/sass/application.scss */
-.cta {
-  width: 100%;
-  height: 500px;
-  background: url(../images/83H.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.phoneView {
+  display: none;
 }
 
-/* line 38, ../../build/sass/application.scss */
+/* line 34, ../../build/sass/application.scss */
 .highlight {
   display: block;
   background: white;
@@ -122,12 +111,18 @@ html, body {
   padding: 10px;
 }
 
-/* line 45, ../../build/sass/application.scss */
+/* line 41, ../../build/sass/application.scss */
 .smallerText {
   font-size: 16px;
 }
 
-/* line 49, ../../build/sass/application.scss */
+/* line 45, ../../build/sass/application.scss */
+.signup {
+  padding-top: 350px;
+  margin-top: -125px;
+}
+
+/* line 50, ../../build/sass/application.scss */
 .build, .quality {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -137,7 +132,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 55, ../../build/sass/application.scss */
+/* line 56, ../../build/sass/application.scss */
 .overview, .memory {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -147,7 +142,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 61, ../../build/sass/application.scss */
+/* line 62, ../../build/sass/application.scss */
 .signup {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -155,51 +150,78 @@ html, body {
   background-size: 100% auto;
 }
 
-/* line 65, ../../build/sass/application.scss */
+/* line 66, ../../build/sass/application.scss */
+.main-container {
+  height: 100%;
+}
+
+/* line 74, ../../build/sass/application.scss */
+.cta {
+  width: 100%;
+  height: 500px;
+  background: url(../images/83H.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 79, ../../build/sass/application.scss */
+.cta a {
+  font-size: 20px;
+}
+
+/* line 84, ../../build/sass/application.scss */
+.content-hold {
+  height: 36.5%;
+}
+
+/* line 93, ../../build/sass/application.scss */
 .overview {
   background: white;
 }
 
-/* line 70, ../../build/sass/application.scss */
+/* line 98, ../../build/sass/application.scss */
 .build {
   background: #333333;
 }
 
-/* line 75, ../../build/sass/application.scss */
+/* line 103, ../../build/sass/application.scss */
 .quality {
   background: #fafafa;
 }
 
-/* line 80, ../../build/sass/application.scss */
+/* line 108, ../../build/sass/application.scss */
 .memory {
   height: 600px;
   background: #555;
 }
 
-/* line 86, ../../build/sass/application.scss */
+/* line 114, ../../build/sass/application.scss */
 .accessories {
   height: 680px;
 }
 
-/* line 90, ../../build/sass/application.scss */
+/* line 122, ../../build/sass/application.scss */
 .support {
-  height: 480px;
+  height: 100%;
   background: #F2F2F2;
-  margin-bottom: 0px;
+  margin-top: -125px;
+  margin-bottom: 0;
 }
 
-/* line 96, ../../build/sass/application.scss */
+/* line 133, ../../build/sass/application.scss */
 .signup {
   background: #F5F5F5;
   height: 100%;
-  padding-top: 70px;
 }
-/* line 102, ../../build/sass/application.scss */
+/* line 139, ../../build/sass/application.scss */
 .signup .highlight {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 16px;
-  background: #ed1c24;
+  font-weight: lighter;
+  background: #333333;
   color: white;
+  border-radius: 3px;
 }
 
 /* line 1, ../../build/sass/includes/_footer.scss */
