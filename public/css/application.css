@@ -1,149 +1,10 @@
-/* line 4, ../sass/includes/_resets.scss */
+/* line 4, ../../build/sass/includes/_resets.scss */
 ul, ol, li {
   margin: 0;
   padding: 0;
 }
 
-/* line 2, ../sass/includes/_fonts.scss */
-a {
-  color: #333333;
-}
-/* line 5, ../sass/includes/_fonts.scss */
-a:hover {
-  text-decoration: none !important;
-}
-
-@font-face {
-  font-family: 'open_sansbold';
-  src: url("opensans-bold-webfont.eot");
-  src: url("opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-bold-webfont.woff") format("woff"), url("opensans-bold-webfont.ttf") format("truetype"), url("opensans-bold-webfont.svg#open_sansbold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansextrabold';
-  src: url("opensans-extrabold-webfont.eot");
-  src: url("opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-extrabold-webfont.woff") format("woff"), url("opensans-extrabold-webfont.ttf") format("truetype"), url("opensans-extrabold-webfont.svg#open_sansextrabold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansitalic';
-  src: url("opensans-italic-webfont.eot");
-  src: url("opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-italic-webfont.woff") format("woff"), url("opensans-italic-webfont.ttf") format("truetype"), url("opensans-italic-webfont.svg#open_sansitalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanslight_italic';
-  src: url("opensans-lightitalic-webfont.eot");
-  src: url("opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-lightitalic-webfont.woff") format("woff"), url("opensans-lightitalic-webfont.ttf") format("truetype"), url("opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansregular';
-  src: url("opensans-regular-webfont.eot");
-  src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-regular-webfont.woff") format("woff"), url("opensans-regular-webfont.ttf") format("truetype"), url("opensans-regular-webfont.svg#open_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanssemibold';
-  src: url("opensans-semibold-webfont.eot");
-  src: url("opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-semibold-webfont.woff") format("woff"), url("opensans-semibold-webfont.ttf") format("truetype"), url("opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* line 18, ../sass/globals/_navigation.scss */
-.navbar {
-  margin-bottom: 0px;
-}
-
-/* line 22, ../sass/globals/_navigation.scss */
-nav {
-  padding-top: 10px;
-  background: white;
-  height: 65px;
-}
-/* line 29, ../sass/globals/_navigation.scss */
-nav img {
-  display: inline;
-  width: 95%;
-  height: 95%;
-  margin-top: -10px;
-}
-/* line 39, ../sass/globals/_navigation.scss */
-nav ul {
-  margin-left: 30px;
-  margin-top: -70px;
-  list-style-type: none;
-}
-/* line 44, ../sass/globals/_navigation.scss */
-nav ul li {
-  display: inline;
-  padding: 0 15px;
-}
-@media screen and (min-width: 768px) {
-  /* line 51, ../sass/globals/_navigation.scss */
-  nav .container {
-    width: 800px;
-  }
-  /* line 52, ../sass/globals/_navigation.scss */
-  nav .navbar > .container .navbar-brand {
-    margin-left: -110px;
-  }
-}
-@media screen and (min-width: 992px) {
-  /* line 57, ../sass/globals/_navigation.scss */
-  nav .container {
-    width: 970px;
-  }
-}
-@media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
-  /* line 22, ../sass/globals/_navigation.scss */
-  nav {
-    padding-top: 10px;
-    line-height: 48px;
-    height: 65px;
-    font-weight: lighter;
-  }
-  /* line 67, ../sass/globals/_navigation.scss */
-  nav label {
-    display: inline-block;
-    font-size: 3.5em;
-    font-weight: lighter;
-    margin-left: -20px;
-  }
-}
-@media screen and (min-width: 360px) and (max-width: 400px) {
-  /* line 22, ../sass/globals/_navigation.scss */
-  nav {
-    height: 65px;
-    padding-top: 13px;
-    line-height: 45px;
-  }
-  /* line 80, ../sass/globals/_navigation.scss */
-  nav label {
-    display: inline-block;
-    font-size: 3.5em;
-    font-weight: lighter;
-    margin-left: -20px;
-  }
-}
-
-/* line 19, ../sass/application.scss */
-body {
-  background: white;
-}
-
-/* line 23, ../sass/application.scss */
+/* line 10, ../../build/sass/includes/_resets.scss */
 .placeholder-thumbnail {
   display: block;
   height: 140px;
@@ -151,159 +12,272 @@ body {
   background: #999;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-/* line 33, ../sass/application.scss */
-.jumbo {
+/* line 21, ../../build/sass/includes/_resets.scss */
+.resetLeft {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 25, ../../build/sass/includes/_resets.scss */
+.resetBottom {
+  margin-bottom: 0px;
+}
+
+/* line 29, ../../build/sass/includes/_resets.scss */
+.pushDown {
   margin-top: 220px;
 }
-/* line 38, ../sass/application.scss */
-.jumbo h1 {
-  background: white;
-  color: #333333;
-  padding: 10px;
-}
-/* line 44, ../sass/application.scss */
-.jumbo h2 {
-  background: white;
-  color: #333333;
-  padding: 10px;
-}
-/* line 50, ../sass/application.scss */
-.jumbo p {
-  padding: 10px;
-  background: white;
-  color: #333333;
-}
 
-/* line 59, ../sass/application.scss */
+/* line 33, ../../build/sass/includes/_resets.scss */
 .space {
   padding-bottom: 30px;
 }
 
-/* line 64, ../sass/application.scss */
-#footer {
-  background: #ed1c24;
-  height: 60px;
-  padding-top: 20px;
-  color: white;
+/* line 2, ../../build/sass/includes/_fonts.scss */
+a {
+  color: #333333;
 }
-/* line 69, ../sass/application.scss */
-#footer ul li {
-  padding-right: 15px;
-  display: inline;
+/* line 5, ../../build/sass/includes/_fonts.scss */
+a:hover {
+  text-decoration: none !important;
 }
 
-/* line 76, ../sass/application.scss */
-.support {
-  height: 480px;
-  background: #F2F2F2;
-  margin-bottom: 0px;
-}
-/* line 82, ../sass/application.scss */
-.support p {
-  font-size: 16px;
-}
-
-/* line 89, ../sass/application.scss */
-.footer a {
-  color: white;
-}
-
-/* line 94, ../sass/application.scss */
-.signup {
-  height: 695px;
-}
-/* line 98, ../sass/application.scss */
-.signup p {
-  font-size: 16px;
-}
-
-/* line 104, ../sass/application.scss */
-.overview {
-  height: 695px;
-}
-/* line 108, ../sass/application.scss */
-.overview p {
-  font-size: 16px;
-}
-
-/* line 114, ../sass/application.scss */
-.build {
-  margin-top: -40px;
-  height: 900px;
-  background: #fff;
-}
-/* line 118, ../sass/application.scss */
-.build p {
-  font-size: 16px;
-}
-
-/* line 123, ../sass/application.scss */
-.quality {
-  margin-top: -40px;
-  height: 900px;
-  background: #fafafa;
-}
-/* line 127, ../sass/application.scss */
-.quality p {
-  font-size: 16px;
-}
-
-/* line 132, ../sass/application.scss */
-.memory {
-  margin-top: -40px;
-  height: 600px;
-  background: #555;
-}
-/* line 136, ../sass/application.scss */
-.memory p {
-  font-size: 16px;
-}
-
-/* line 141, ../sass/application.scss */
-.accessories {
-  margin-top: -40px;
-  margin-bottom: -40px;
-  height: 680px;
-}
-
-/* line 147, ../sass/application.scss */
-.jumbotron {
+/* line 18, ../../build/sass/globals/_navigation.scss */
+.navbar {
   margin-bottom: 0px;
 }
 
-/* line 153, ../sass/application.scss */
-.jumbotron.cta {
+/* line 21, ../../build/sass/globals/_navigation.scss */
+.logo {
   width: 100%;
-  height: 720px;
+  height: 100%;
+  margin-top: -5px;
+}
+
+/* line 27, ../../build/sass/globals/_navigation.scss */
+nav {
+  padding-top: 10px;
+  background: white;
+  height: 65px;
+}
+/* line 32, ../../build/sass/globals/_navigation.scss */
+nav ul {
+  margin-left: 30px;
+  margin-top: -70px;
+  list-style-type: none;
+}
+/* line 37, ../../build/sass/globals/_navigation.scss */
+nav ul li {
+  display: inline;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  /* line 44, ../../build/sass/globals/_navigation.scss */
+  nav .container {
+    width: 800px;
+  }
+  /* line 47, ../../build/sass/globals/_navigation.scss */
+  nav .navbar > .container .navbar-brand {
+    margin-left: -110px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 54, ../../build/sass/globals/_navigation.scss */
+  nav .container {
+    width: 970px;
+  }
+}
+
+/* line 23, ../../build/sass/application.scss */
+html, body {
+  background: white;
+  height: 100%;
+}
+
+/* line 28, ../../build/sass/application.scss */
+.phoneView {
+  display: none;
+}
+
+/* line 32, ../../build/sass/application.scss */
+.highlight {
+  display: block;
+  background: white;
+  color: #333333;
+  padding: 10px;
+}
+
+/* line 39, ../../build/sass/application.scss */
+.smallerText {
+  font-size: 16px;
+}
+
+/* line 43, ../../build/sass/application.scss */
+.signup {
+  padding-top: 350px;
+  margin-top: -125px;
+}
+
+/* line 48, ../../build/sass/application.scss */
+.build, .quality {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 760px;
+  margin-bottom: 0;
+}
+
+/* line 54, ../../build/sass/application.scss */
+.overview, .memory {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  height: 595px;
+  margin-bottom: 0;
+}
+
+/* line 60, ../../build/sass/application.scss */
+.signup {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+/* line 64, ../../build/sass/application.scss */
+.main-container {
+  height: 100%;
+}
+
+/* line 72, ../../build/sass/application.scss */
+.cta {
+  width: 100%;
+  height: 500px;
   background: url(../images/83H.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+/* line 77, ../../build/sass/application.scss */
+.cta a {
+  font-size: 20px;
+}
+
+/* line 82, ../../build/sass/application.scss */
+.content-hold {
+  height: 36.5%;
+}
+
+/* line 90, ../../build/sass/application.scss */
+.overview {
+  background: white;
+}
+
+/* line 95, ../../build/sass/application.scss */
+.build {
+  background: #333333;
+}
+
+/* line 101, ../../build/sass/application.scss */
+.quality {
+  background: #fafafa;
+}
+
+/* line 106, ../../build/sass/application.scss */
+.memory {
+  height: 600px;
+  background: #555;
+}
+
+/* line 112, ../../build/sass/application.scss */
+.accessories {
+  height: 680px;
+}
+
+/* line 120, ../../build/sass/application.scss */
+.support {
+  height: 100%;
+  background: #F2F2F2;
+  margin-top: -125px;
+  margin-bottom: 0;
+}
+
+/* line 131, ../../build/sass/application.scss */
+.signup {
+  background: #F5F5F5;
+  height: 100%;
+}
+/* line 137, ../../build/sass/application.scss */
+.signup .highlight {
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: lighter;
+  background: #333333;
+  color: white;
+  border-radius: 3px;
+}
+
+/* line 1, ../../build/sass/includes/_footer.scss */
+#footer {
+  background: #ed1c24;
+  height: 60px;
+  padding-top: 20px;
+  color: white;
+  width: 100%;
+}
+/* line 8, ../../build/sass/includes/_footer.scss */
+#footer a {
+  color: white;
+}
+/* line 12, ../../build/sass/includes/_footer.scss */
+#footer ul li {
+  padding-right: 15px;
+  display: inline;
+}
+
 @media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
-  /* line 153, ../sass/application.scss */
-  .jumbotron.cta {
-    background-position: 0px;
+  /* line 5, ../../build/sass/views/_tablet.scss */
+  .cta {
+    background-position: 0;
     height: 500px;
     width: 100%;
   }
-  /* line 168, ../sass/application.scss */
-  .jumbotron.cta p {
+  /* line 9, ../../build/sass/views/_tablet.scss */
+  .cta p {
     font-size: 19px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 400px) {
-  /* line 153, ../sass/application.scss */
-  .jumbotron.cta {
-    background-position: 0px;
+  /* line 5, ../../build/sass/views/_phone.scss */
+  .desktopView {
+    display: none;
+  }
+
+  /* line 8, ../../build/sass/views/_phone.scss */
+  .phoneView {
+    display: block;
+  }
+
+  /* line 11, ../../build/sass/views/_phone.scss */
+  .pushDown {
+    margin-top: 100px;
+  }
+
+  /* line 14, ../../build/sass/views/_phone.scss */
+  .cta {
+    background-position: 0;
     height: 300px;
     width: 100%;
   }
-  /* line 175, ../sass/application.scss */
-  .jumbotron.cta p {
-    font-size: 19px;
+  /* line 18, ../../build/sass/views/_phone.scss */
+  .cta p {
+    font-size: 16px;
   }
 }

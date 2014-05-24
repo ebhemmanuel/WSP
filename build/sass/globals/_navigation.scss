@@ -1,79 +1,59 @@
 //
 // Main persistant header, logo, and navigation
 //
-$paddingDesktopNav  : 10px;
-$paddingTabletNav   : 10px;
-$paddingPhoneNav    : 13px;
-$lineheightTabletNav: 48px;
-$linehPhoneNav      : 45px;
-$lineheight         : -70px;
-$navDesktopHeight   : 65px;
-$navPhoneHeight     : 65px;
-$navTabletHeight    : 160px;
+
+$paddingDesktopNav    : 10px;
+$paddingTabletNav     : 10px;
+$paddingPhoneNav      : 13px;
+$lineheightTabletNav  : 48px;
+$linehPhoneNav        : 45px;
+$lineheight           : -70px;
+$navDesktopHeight     : 65px;
+$navPhoneHeight       : 65px;
+$navTabletHeight      : 160px;
+$logoSize             : 100%;
 
 // Navigation
 
 .navbar{
-  margin-bottom     : 0px;
+  margin-bottom       : 0px;
  }
+.logo{
+  width               : $logoSize;
+  height              : $logoSize;
+  margin-top          : -5px;
+}
 
 nav{
- padding-top        : $paddingDesktopNav;
- background         : $white;
- height             : $navDesktopHeight;
+  padding-top         : $paddingDesktopNav;
+  background          : $white;
+  height              : $navDesktopHeight;
 
-  ul{
-   margin-left: 30px;
-   margin-top: $lh;
-   list-style-type: none;
+ ul{
+  margin-left         : 30px;
+  margin-top          : $lineheight;
+  list-style-type     : none;
 
-  li {
-   display: inline;
-   padding: 0 15px;
-   }
+ li{
+  display             : inline;
+  padding             : 0 15px;
+  }
  }
  //Small Screen (Desktop) Settings
  @include forScreen($smallScreen){
   .container{
-    width: 800px;
+    width             : 800px;
    }
   .navbar>.container .navbar-brand{
-    margin-left: -110px;
-    }
+    margin-left       : -110px;
+  }
  }
 
  //Desktop Settings
  @include forScreen($mediumScreen){
- .container{width: 970px;}
- }
-
-
-  //Tablet Settings
- @include forScreen($tablet){
-  padding-top: $paddingTabletNav;
-  line-height: $lineheightTabletNav;
-  height: $navDesktopHeight;
-  font-weight:lighter;
-  label{
-  display             : inline-block;
-  font-size           : 3.5em;
-  font-weight         : lighter;
-  margin-left         : -20px;
+  .container{
+    width             : 970px;
   }
  }
-
- //Phone Settings
- @include forScreen($phone){
-
-  height             : $navPhoneHeight;
-  padding-top        : $paddingPhoneNav;
-  line-height        : $linehPhoneNav;
-  label{
-   display           : inline-block;
-   font-size         : 3.5em;
-   font-weight       : lighter;
-   margin-left       : -20px;
-  }
-  }
 }
 

@@ -15,7 +15,7 @@
     <nav role="navigation" class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="public/images/logo3.svg"></a>
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand resetLeft"><img src="public/images/logo3.svg" class="logo"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav pull-right">
@@ -27,46 +27,49 @@
         </div>
       </div>
     </nav>
-    <div class="jumbotron signup">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-3 jumbo">
-            <form role="form">
-              <div class="form-group">
-                <label for="fullname">Full Name</label>
-                <input id="fullname" type="name" placerholder="Full Name" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input id="email" type="email" placerholder="Enter email" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input id="password" type="Password" placerholder="Password" class="form-control">
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10"></div>
-                <button type="submit" class="btn btn-default">Sign Up</button>
-              </div>
-            </form>
-          </div>
+    <div class="container-fluid signup">
+      <div class="row">
+        <div class="col-xs-8 col-xs-push-2 col-md-2 col-md-push-5">
+          <form role="form">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input id="fullname" type="name" placerholder="Full Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" placerholder="Enter email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" type="Password" placerholder="Password" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10"></div><a href="#" type="submit" class="highlight text-center">Sign Up</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <div id="footer">
-      <div class="container">
+    <div id="footer" class="resetBottom">
+      <div class="container desktopView">
         <div class="row">
-          <div class="col-sm-4">
-            <p>&copy; Copyright 2014 Leica Camera AG</p>
+          <div class="col-xs-5 col-sm-3 col-md-8">
+            <p>&copy; Copyright 2014 Leica</p>
           </div>
-          <div class="col-sm-4 col-sm-offset-4">
+          <div class="col-xs-7 col-sm-9 col-md-4">
             <ul class="list-unstyled footer">
               <li><a href="#">Terms of Use</a></li>
               <li><a href="#">Privacy</a></li>
               <li><a href="#">FAQ</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container phoneView">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <p>&copy; Copyright 2014 Leica</p>
           </div>
         </div>
       </div>

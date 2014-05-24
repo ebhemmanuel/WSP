@@ -14,144 +14,140 @@
 @import 'mixins/responsive';
 //
 @import 'globals/navigation';
+//
+// Default on.
+//
 
+$heightReset: -125px;
 
-body {
-  background   : $white;
-  }
-
-.phoneView{
-  display      : none;
+ html, body {
+  background        : $white;
+  height            : 100%;
 }
 
-.placeholder-thumbnail{
-  display      : block;
-  height       : $thumnailSize;
-  width        : $thumnailSize;
-  background   : #999;
-  margin-left  : auto;
-  margin-right : auto;
-  margin-bottom: $thumbnailPadding;
-  margin-top   : $thumbnailPadding;
+.phoneView{
+  display           : none;
 }
 
 .highlight{
-  display      : block;
-  background   : $white;
-  color        : $black;
-  padding      : $paddingH;
-}
-
-.resetLeft{
-  margin-left  : 0;
-  padding-left : 0;
-}
-.resetBottom{
-  margin-bottom: 0px;
-}
-
-.pushDown{
-  margin-top   : 220px;
-}
-
-.space{
-  padding-bottom: 30px;
-}
-
-#footer{
-  margin-top  : 5px;
-  background  : $red;
-  height      : 60px;
-  padding-top : 20px;
-  color       : $white;
-
-  a{
-    color       : $white;
-    }
-
-  ul li {
-    padding-right   : 15px;
-    display         : inline;
-  }
+  display           : block;
+  background        : $white;
+  color             : $black;
+  padding           : $paddingH;
 }
 
 .smallerText{
-  font-size     : 16px;
+  font-size         : 16px;
+}
+
+%expand-content{
+    padding-top     : 350px;
+    margin-top      : $heightReset;
 }
 
 %feature-block{
   @include background-size;
-  height        : 760px;
-  margin-bottom : 0;
-  }
+  height            : 760px;
+  margin-bottom     : 0;
+}
 
 %detail-block{
   @include background-size;
-  height        : 595px;
-  margin-bottom : 0;
+  height            : 595px;
+  margin-bottom     : 0;
 }
 
 %signup-block{
   @include background-size;
-  height        : 675px;
-  margin-bottom : 0;
 }
+
+.main-container{
+  height           : 100%;
+}
+
+//
+// Index Page
+//
+
+.cta{
+  width             : 100%;
+  height            : 500px;
+  background        : url(../images/83H.jpg)  no-repeat center center;
+  @include background-size(cover);
+  a{
+    font-size: 20px;
+  }
+}
+
+.content-hold{
+  height            : 36.5%;
+}
+
+//
+// Products Page
+//
 
 .overview{
   @extend %detail-block;
-  background    : $white;
+  background        : $white;
 }
 
 .build{
   @extend %feature-block;
-  background    : $black;
+  background        : $black;
+
 }
 
 .quality{
   @extend %feature-block;
-  background    : #fafafa;
-  }
+  background        : #fafafa;
+}
 
 .memory{
   @extend %detail-block;
-  height        : 600px;
-  background    : #555;
-  }
+  height            : 600px;
+  background        : #555;
+}
 
 .accessories{
+  height            : 680px;
+}
 
-  height        : 680px;
-  }
+//
+// Support Page
+//
 
 .support{
-  height        : 480px;
-  background    :#F2F2F2;
-  margin-bottom : 0px;
+  height            : 100%;
+  background        : #F2F2F2;
+  margin-top        : $heightReset;
+  margin-bottom     : 0;
 }
+
+//
+// Sign Up Page
+//
 
 .signup{
   @extend %signup-block;
-  margin-bottom     : 0;
-  padding-top       : 120px;
-  background        : #f9f9f9;
+  @extend %expand-content;
+    background      : #F5F5F5;
+    height          : 100%;
+
   .highlight{
-    letter-spacing  : 2px;
+    letter-spacing  : 3px;
     font-size       : 16px;
-    background-color: $red;
+    font-weight     : lighter;
+    background      : $black;
     color           : $white;
+    border-radius   : 3px;
   }
 }
 
+@import 'includes/footer';
 //
-//CTA settings
+// Different view includes.
 //
-
-.cta{
-  width                   : 100%;
-  height                  : 500px;
-  background              : url(../images/83H.jpg)  no-repeat center center;
-  @include background-size(cover);
-  }
-
 @import 'views/tablet';
 @import 'views/phone';
+
