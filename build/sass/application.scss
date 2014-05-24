@@ -70,7 +70,6 @@ $heightReset: -125px;
 //
 
 .cta{
-  width             : 100%;
   height            : 500px;
   background        : url(../images/83H.jpg)  no-repeat center center;
   @include background-size(cover);
@@ -79,9 +78,18 @@ $heightReset: -125px;
   }
 }
 
-.content-hold{
-  height            : 36.5%;
+.content{
+  height            : 100%;
+  margin-top        : -65px;
 }
+
+.wrapper{
+  // position          : relative;
+  height            : inherit;
+  background        : #F2F2F2;
+  padding-top       : 65px;
+}
+
 
 //
 // Products Page
@@ -117,22 +125,13 @@ $heightReset: -125px;
 // Support Page
 //
 
-.support{
-  height            : 100%;
-  background        : #F2F2F2;
-  margin-top        : $heightReset;
-  margin-bottom     : 0;
-}
-
 //
 // Sign Up Page
 //
 
 .signup{
   @extend %signup-block;
-  @extend %expand-content;
-    background      : #F5F5F5;
-    height          : 100%;
+  padding-top       : 60px;
 
   .highlight{
     letter-spacing  : 3px;
