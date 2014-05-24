@@ -40,11 +40,6 @@ $heightReset: -125px;
   font-size         : 16px;
 }
 
-%expand-content{
-    padding-top     : 350px;
-    margin-top      : $heightReset;
-}
-
 %feature-block{
   @include background-size;
   height            : 760px;
@@ -57,9 +52,6 @@ $heightReset: -125px;
   margin-bottom     : 0;
 }
 
-%signup-block{
-  @include background-size;
-}
 
 .main-container{
   height           : 100%;
@@ -130,7 +122,6 @@ $heightReset: -125px;
 //
 
 .signup{
-  @extend %signup-block;
   padding-top       : 60px;
 
   .highlight{
