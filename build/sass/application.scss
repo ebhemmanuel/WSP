@@ -20,11 +20,9 @@
   display           : none;
 }
 //
-body {
+ html, body {
   background        : $white;
   height            : 100%;
-  margin            : 0;
-  padding           : 0;
 }
 //
 //CTA settings
@@ -97,18 +95,14 @@ body {
 
 .signup{
   @extend %signup-block;
-    left            : 0px;
-    top             : 0px;
-    background-color: #F5F5F5;
-    width           : 100%;
+    background      : #F5F5F5;
     height          : 100%;
-    overflow        : hidden;
     padding-top     : 70px;
 
   .highlight{
     letter-spacing  : 2px;
     font-size       : 16px;
-    background-color: $red;
+    background      : $red;
     color           : $white;
   }
 }
