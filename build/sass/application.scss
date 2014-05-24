@@ -22,6 +22,9 @@
 //
 body {
   background        : $white;
+  height            : 100%;
+  margin            : 0;
+  padding           : 0;
 }
 //
 //CTA settings
@@ -39,23 +42,6 @@ body {
   background        : $white;
   color             : $black;
   padding           : $paddingH;
-}
-
-#footer{
-  margin-top        : 5px;
-  background        : $red;
-  height            : 60px;
-  padding-top       : 20px;
-  color             : $white;
-
-  a{
-    color           : $white;
-  }
-
-  ul li {
-    padding-right   : 15px;
-    display         : inline;
-  }
 }
 
 .smallerText{
@@ -76,8 +62,6 @@ body {
 
 %signup-block{
   @include background-size;
-  height            : 675px;
-  margin-bottom     : 0;
 }
 
 .overview{
@@ -113,9 +97,13 @@ body {
 
 .signup{
   @extend %signup-block;
-  margin-bottom     : 0;
-  padding-top       : 120px;
-  background        : #f9f9f9;
+    left            : 0px;
+    top             : 0px;
+    background-color: #F5F5F5;
+    width           : 100%;
+    height          : 100%;
+    overflow        : hidden;
+    padding-top     : 70px;
 
   .highlight{
     letter-spacing  : 2px;
@@ -124,6 +112,10 @@ body {
     color           : $white;
   }
 }
+
+@import 'includes/footer';
+//
+// Different view includes.
 //
 @import 'views/tablet';
 @import 'views/phone';

@@ -1,0 +1,17 @@
+#footer{
+  background        : $red;
+  height            : 60px;
+  padding-top       : 20px;
+  color             : $white;
+  position          : absolute;
+  width             : 100%;
+
+  a{
+    color           : $white;
+  }
+
+  ul li {
+    padding-right   : 15px;
+    display         : inline;
+  }
+}
