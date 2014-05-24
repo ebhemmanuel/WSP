@@ -116,12 +116,6 @@ html, body {
   font-size: 16px;
 }
 
-/* line 43, ../../build/sass/application.scss */
-.signup {
-  padding-top: 350px;
-  margin-top: -125px;
-}
-
 /* line 48, ../../build/sass/application.scss */
 .build, .quality {
   -webkit-background-size: 100% auto;
@@ -157,7 +151,6 @@ html, body {
 
 /* line 72, ../../build/sass/application.scss */
 .cta {
-  width: 100%;
   height: 500px;
   background: url(../images/83H.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -165,56 +158,55 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 77, ../../build/sass/application.scss */
+/* line 76, ../../build/sass/application.scss */
 .cta a {
   font-size: 20px;
 }
 
-/* line 82, ../../build/sass/application.scss */
-.content-hold {
-  height: 36.5%;
+/* line 81, ../../build/sass/application.scss */
+.content {
+  height: 100%;
+  margin-top: -65px;
 }
 
-/* line 90, ../../build/sass/application.scss */
+/* line 86, ../../build/sass/application.scss */
+.wrapper {
+  height: inherit;
+  background: #F2F2F2;
+  padding-top: 65px;
+}
+
+/* line 98, ../../build/sass/application.scss */
 .overview {
   background: white;
 }
 
-/* line 95, ../../build/sass/application.scss */
+/* line 103, ../../build/sass/application.scss */
 .build {
   background: #333333;
 }
 
-/* line 101, ../../build/sass/application.scss */
+/* line 109, ../../build/sass/application.scss */
 .quality {
   background: #fafafa;
 }
 
-/* line 106, ../../build/sass/application.scss */
+/* line 114, ../../build/sass/application.scss */
 .memory {
   height: 600px;
   background: #555;
 }
 
-/* line 112, ../../build/sass/application.scss */
+/* line 120, ../../build/sass/application.scss */
 .accessories {
   height: 680px;
 }
 
-/* line 120, ../../build/sass/application.scss */
-.support {
-  height: 100%;
-  background: #F2F2F2;
-  margin-top: -125px;
-  margin-bottom: 0;
-}
-
-/* line 131, ../../build/sass/application.scss */
+/* line 132, ../../build/sass/application.scss */
 .signup {
-  background: #F5F5F5;
-  height: 100%;
+  padding-top: 60px;
 }
-/* line 137, ../../build/sass/application.scss */
+/* line 136, ../../build/sass/application.scss */
 .signup .highlight {
   letter-spacing: 3px;
   font-size: 16px;
@@ -226,17 +218,18 @@ html, body {
 
 /* line 1, ../../build/sass/includes/_footer.scss */
 #footer {
+  color: white;
   background: #ed1c24;
+  width: 100%;
   height: 60px;
   padding-top: 20px;
-  color: white;
-  width: 100%;
+  margin-top: -60px;
 }
-/* line 8, ../../build/sass/includes/_footer.scss */
+/* line 9, ../../build/sass/includes/_footer.scss */
 #footer a {
   color: white;
 }
-/* line 12, ../../build/sass/includes/_footer.scss */
+/* line 13, ../../build/sass/includes/_footer.scss */
 #footer ul li {
   padding-right: 15px;
   display: inline;
