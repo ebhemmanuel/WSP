@@ -4,13 +4,21 @@
 @include forScreen($tablet){
 
   .cta{
+  	background           : url(../images/m9c.jpg)  no-repeat center center;
     background-position  : 0;
-    height               : 500px;
     width                : 100%;
-    a{
-      font-size          : 19px;
-    }
-  }
+    height               : 550px;
+    padding-top          : 200px;
+    h1{
+  	color           :$white;
+  	font-size       : 32px;
+  	font-weight     : lighter;
+  	padding-bottom  : 15px;
+  	}
+  	p{
+     font-size       : 18px;
+  	}
+ }
 
   .support{
   	padding           : 200px 0 0 0;

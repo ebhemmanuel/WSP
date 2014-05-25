@@ -71,14 +71,20 @@
 
 .cta{
   height            : 500px;
-  background        : url(../images/83H.jpg)  no-repeat center center;
-  @include background-size(cover);
-
   letter-spacing    : 5px;
-
+  background        : url(../images/m9c.jpg)  no-repeat center center;
+  @include background-size(cover);
   a{
     font-size       : 20px;
   }
+}
+
+%big-detail{
+  height            : 530px
+}
+
+%small-detail{
+  height            : 300px
 }
 
 //
