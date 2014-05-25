@@ -18,11 +18,22 @@
 // Default on.
 //
 
-$heightReset: -125px;
-
  html, body {
   background        : $white;
 }
+
+.content{
+  height            : 100%;
+  margin-top        : -65px;
+}
+
+.wrapper{
+  // position          : relative;
+  height            : inherit;
+  background        : #F2F2F2;
+  padding-top       : 65px;
+}
+
 
 .phoneView{
   display           : none;
@@ -33,6 +44,7 @@ $heightReset: -125px;
   background        : $white;
   color             : $black;
   padding           : $paddingH;
+  border-radius     : 3px;
 }
 
 .smallerText{
@@ -52,9 +64,6 @@ $heightReset: -125px;
 }
 
 
-.main-container{
-  height           : 100%;
-}
 
 //
 // Index Page
@@ -64,23 +73,13 @@ $heightReset: -125px;
   height            : 500px;
   background        : url(../images/83H.jpg)  no-repeat center center;
   @include background-size(cover);
+
+  letter-spacing    : 5px;
+
   a{
-    font-size: 20px;
+    font-size       : 20px;
   }
 }
-
-.content{
-  height            : 100%;
-  margin-top        : -65px;
-}
-
-.wrapper{
-  // position          : relative;
-  height            : inherit;
-  background        : #F2F2F2;
-  padding-top       : 65px;
-}
-
 
 //
 // Products Page
@@ -115,13 +114,18 @@ $heightReset: -125px;
 //
 // Support Page
 //
+.support{
+  padding           : 200px 0 0 0;
+  min-height        : 680px;
 
+}
 //
 // Sign Up Page
 //
 
 .signup{
-  padding-top       : 60px;
+  padding           : 200px 0 0 0;
+  min-height        : 680px;
 
   .highlight{
     letter-spacing  : 3px;
@@ -137,6 +141,8 @@ $heightReset: -125px;
 //
 // Different view includes.
 //
+@import 'views/widescreen';
 @import 'views/tablet';
 @import 'views/phone';
+
 

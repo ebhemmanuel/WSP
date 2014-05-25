@@ -18,10 +18,16 @@ $logoSize             : 100%;
 .navbar{
   margin-bottom       : 0px;
  }
+.nav-text{
+  letter-spacing      : 2px;
+  margin-right        : -60px;
+}
+
 .logo{
   width               : $logoSize;
   height              : $logoSize;
   margin-top          : -5px;
+  margin-left         : -35px;
 }
 
 nav{
@@ -36,7 +42,7 @@ nav{
 
  li{
   display             : inline;
-  padding             : 0 15px;
+  padding             : 0 10px;
   }
  }
  //Small Screen (Desktop) Settings

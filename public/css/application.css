@@ -52,70 +52,91 @@ a:hover {
 }
 
 /* line 21, ../../build/sass/globals/_navigation.scss */
+.nav-text {
+  letter-spacing: 2px;
+  margin-right: -60px;
+}
+
+/* line 26, ../../build/sass/globals/_navigation.scss */
 .logo {
   width: 100%;
   height: 100%;
   margin-top: -5px;
+  margin-left: -35px;
 }
 
-/* line 27, ../../build/sass/globals/_navigation.scss */
+/* line 33, ../../build/sass/globals/_navigation.scss */
 nav {
   padding-top: 10px;
   background: white;
   height: 65px;
 }
-/* line 32, ../../build/sass/globals/_navigation.scss */
+/* line 38, ../../build/sass/globals/_navigation.scss */
 nav ul {
   margin-left: 30px;
   margin-top: -70px;
   list-style-type: none;
 }
-/* line 37, ../../build/sass/globals/_navigation.scss */
+/* line 43, ../../build/sass/globals/_navigation.scss */
 nav ul li {
   display: inline;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 @media screen and (min-width: 768px) {
-  /* line 44, ../../build/sass/globals/_navigation.scss */
+  /* line 50, ../../build/sass/globals/_navigation.scss */
   nav .container {
     width: 800px;
   }
-  /* line 47, ../../build/sass/globals/_navigation.scss */
+  /* line 53, ../../build/sass/globals/_navigation.scss */
   nav .navbar > .container .navbar-brand {
     margin-left: -110px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 54, ../../build/sass/globals/_navigation.scss */
+  /* line 60, ../../build/sass/globals/_navigation.scss */
   nav .container {
     width: 970px;
   }
 }
 
-/* line 23, ../../build/sass/application.scss */
+/* line 21, ../../build/sass/application.scss */
 html, body {
   background: white;
 }
 
-/* line 27, ../../build/sass/application.scss */
+/* line 25, ../../build/sass/application.scss */
+.content {
+  height: 100%;
+  margin-top: -65px;
+}
+
+/* line 30, ../../build/sass/application.scss */
+.wrapper {
+  height: inherit;
+  background: #F2F2F2;
+  padding-top: 65px;
+}
+
+/* line 38, ../../build/sass/application.scss */
 .phoneView {
   display: none;
 }
 
-/* line 31, ../../build/sass/application.scss */
+/* line 42, ../../build/sass/application.scss */
 .highlight {
   display: block;
   background: white;
   color: #333333;
   padding: 10px;
+  border-radius: 3px;
 }
 
-/* line 38, ../../build/sass/application.scss */
+/* line 50, ../../build/sass/application.scss */
 .smallerText {
   font-size: 16px;
 }
 
-/* line 42, ../../build/sass/application.scss */
+/* line 54, ../../build/sass/application.scss */
 .build, .quality {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -125,7 +146,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 48, ../../build/sass/application.scss */
+/* line 60, ../../build/sass/application.scss */
 .overview, .memory {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
@@ -135,12 +156,7 @@ html, body {
   margin-bottom: 0;
 }
 
-/* line 55, ../../build/sass/application.scss */
-.main-container {
-  height: 100%;
-}
-
-/* line 63, ../../build/sass/application.scss */
+/* line 72, ../../build/sass/application.scss */
 .cta {
   height: 500px;
   background: url(../images/83H.jpg) no-repeat center center;
@@ -148,56 +164,51 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  letter-spacing: 5px;
 }
-/* line 67, ../../build/sass/application.scss */
+/* line 79, ../../build/sass/application.scss */
 .cta a {
   font-size: 20px;
 }
 
-/* line 72, ../../build/sass/application.scss */
-.content {
-  height: 100%;
-  margin-top: -65px;
-}
-
-/* line 77, ../../build/sass/application.scss */
-.wrapper {
-  height: inherit;
-  background: #F2F2F2;
-  padding-top: 65px;
-}
-
-/* line 89, ../../build/sass/application.scss */
+/* line 88, ../../build/sass/application.scss */
 .overview {
   background: white;
 }
 
-/* line 94, ../../build/sass/application.scss */
+/* line 93, ../../build/sass/application.scss */
 .build {
   background: #333333;
 }
 
-/* line 100, ../../build/sass/application.scss */
+/* line 99, ../../build/sass/application.scss */
 .quality {
   background: #fafafa;
 }
 
-/* line 105, ../../build/sass/application.scss */
+/* line 104, ../../build/sass/application.scss */
 .memory {
   height: 600px;
   background: #555;
 }
 
-/* line 111, ../../build/sass/application.scss */
+/* line 110, ../../build/sass/application.scss */
 .accessories {
   height: 680px;
 }
 
-/* line 123, ../../build/sass/application.scss */
-.signup {
-  padding-top: 60px;
+/* line 117, ../../build/sass/application.scss */
+.support {
+  padding: 200px 0 0 0;
+  min-height: 680px;
 }
+
 /* line 126, ../../build/sass/application.scss */
+.signup {
+  padding: 200px 0 0 0;
+  min-height: 680px;
+}
+/* line 130, ../../build/sass/application.scss */
 .signup .highlight {
   letter-spacing: 3px;
   font-size: 16px;
@@ -209,15 +220,15 @@ html, body {
 
 /* line 1, ../../build/sass/includes/_footer.scss */
 #footer {
-  color: white;
-  background: #ed1c24;
+  color: #333333;
+  background: white;
   width: 100%;
   height: 60px;
   padding-top: 20px;
 }
 /* line 8, ../../build/sass/includes/_footer.scss */
 #footer a {
-  color: white;
+  color: #333333;
 }
 /* line 12, ../../build/sass/includes/_footer.scss */
 #footer ul li {
@@ -225,16 +236,51 @@ html, body {
   display: inline;
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  /* line 3, ../../build/sass/views/_widescreen.scss */
+  .cta {
+    height: 800px;
+    padding-top: 300px;
+    background: url(../images/m9c.jpg) no-repeat center center;
+    background-position: 0 -40px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /* line 10, ../../build/sass/views/_widescreen.scss */
+  .cta h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: lighter;
+    padding-bottom: 15px;
+  }
+  /* line 16, ../../build/sass/views/_widescreen.scss */
+  .cta p {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 401px) and (max-width: 992px) and (orientation: portrait) {
-  /* line 5, ../../build/sass/views/_tablet.scss */
+  /* line 6, ../../build/sass/views/_tablet.scss */
   .cta {
     background-position: 0;
     height: 500px;
     width: 100%;
   }
-  /* line 9, ../../build/sass/views/_tablet.scss */
-  .cta p {
+  /* line 10, ../../build/sass/views/_tablet.scss */
+  .cta a {
     font-size: 19px;
+  }
+
+  /* line 15, ../../build/sass/views/_tablet.scss */
+  .support {
+    padding: 200px 0 0 0;
+    min-height: 762px;
+  }
+
+  /* line 20, ../../build/sass/views/_tablet.scss */
+  .signup {
+    min-height: 762px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 400px) {
