@@ -1,6 +1,8 @@
 //
 // Globals = persistant dom layout across pages
 @import 'compass/css3';
+@import 'compass/css3/transform';
+@import 'compass/css3/transition';
 @import 'globals/variables';
 //
 // Includes = persistent aesthetic styling across pages
@@ -18,11 +20,12 @@
 // Default on.
 //
 
-$heightReset: -125px;
-
  html, body {
   background        : $white;
-  height            : 100%;
+}
+
+.pointer{
+  cursor            : pointer
 }
 
 .phoneView{
@@ -34,36 +37,47 @@ $heightReset: -125px;
   background        : $white;
   color             : $black;
   padding           : $paddingH;
+  border-radius     : 3px;
+
 }
 
 .smallerText{
   font-size         : 16px;
 }
 
-%expand-content{
-    padding-top     : 350px;
-    margin-top      : $heightReset;
-}
-
 %feature-block{
-  @include background-size;
+  @include background-size(cover);
   height            : 760px;
   margin-bottom     : 0;
 }
 
 %detail-block{
-  @include background-size;
+  @include background-size(cover);
   height            : 595px;
   margin-bottom     : 0;
 }
 
-%signup-block{
-  @include background-size;
+.t-cam{
+  background: url(../images/menu/t.svg);
+  @include background-size(contain);
 }
 
-.main-container{
-  height           : 100%;
+.m-cam{
+  background: url(../images/menu/m.svg);
+  @include background-size(contain);
 }
+
+.s-cam{
+  background: url(../images/menu/s.svg);
+  @include background-size(contain);
+}
+
+.x-cam{
+  background: url(../images/menu/x.svg);
+  @include background-size(contain);
+}
+
+
 
 //
 // Index Page
@@ -71,50 +85,178 @@ $heightReset: -125px;
 
 .cta{
   height            : 500px;
-  background        : url(../images/83H.jpg)  no-repeat center center;
+  letter-spacing    : 5px;
+  background        : url(../images/m9c.jpg)  no-repeat center center;
   @include background-size(cover);
-  a{
-    font-size: 20px;
+  a{  transition    : .2s ;
+      font-size     : 18px;
+  }
+  a:hover{
+    color           : $white;
+  }
+  .highlight{
+
+    &:hover{
+      background    : $red;
+    }
   }
 }
 
-.content{
-  height            : 100%;
-  margin-top        : -65px;
+%big-detail{
+  height            : 530px;
+  a{
+    font-size       : 20px;
+    color           : $black;
+    &:hover{
+     transition     : .2s;
+     color          : $red;
+    }
+  }
 }
 
-.wrapper{
-  // position          : relative;
-  height            : inherit;
-  background        : #F2F2F2;
-  padding-top       : 65px;
+%small-detail{
+  height            : 300px
+}
+
+.tile1{
+  @extend %big-detail;
+  h2{
+    font-weight     : lighter;
+    letter-spacing  : 3px;
+  }
+  padding-top       : 280px;
+  // background        : #111;
+  background        : url(../images/100y.jpg) no-repeat center center;
+  @include background-size(cover);
+  color             : $white;
+}
+
+.tile2{
+  .highlight{
+    padding: 25px;
+  }
+  @extend %big-detail;
+  background        : url(../images/values.jpg)  no-repeat center center;
+  @include background-size(cover);
+  // background        : $white;
+}
+
+.tile3 {
+  @extend %big-detail;
+  background        : $red;
+  color             : $white;
+  h2{
+    letter-spacing  : 3px;
+    font-weight     : lighter;
+    padding-bottom  : 40px;
+  }
+}
+
+$icon-size          : 80px;
+
+%social-icon{
+  height            : $icon-size;
+  width             : $icon-size;
+}
+
+.google-icon{
+  @extend %social-icon;
+  background: url(../images/follow/gp.svg);
+  @include background-size(contain);
+}
+
+.facebook-icon{
+  @extend %social-icon;
+  background: url(../images/follow/fb.svg);
+  @include background-size(contain);
+
+}
+
+.twitter-icon{
+  @extend %social-icon;
+  background: url(../images/follow/tw.svg);
+  @include background-size(contain);
+
+}
+
+.youtube-icon{
+  @extend %social-icon;
+  background: url(../images/follow/yt.svg);
+  @include background-size(contain);
 }
 
 
 //
-// Products Page
+// Product Page
+//
+
+.LM{
+  background        : url(../images/products/m.jpg)  no-repeat center center;
+  @extend %big-detail;
+  @include background-size(contain);
+  background-position: 600px 220px;
+
+}
+
+.LM7{
+  background        : url(../images/products/m7.jpg)  no-repeat center center;
+  @extend %big-detail;
+  @include background-size(contain);
+  background-position: 600px 220px;
+
+
+}
+
+.LM9{
+  background        : url(../images/products/m92.jpg)  no-repeat center center;
+  @extend %big-detail;
+  @include background-size(contain);
+  background-position: 600px 220px;
+
+}
+
+//
+// Product Detail Page
 //
 
 .overview{
+  background        : url(../images/leica/t/side.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %detail-block;
-  background        : $white;
+  padding-top       : 300px;
+
+  a .highlight:hover{
+    background      : $red;
+    color           : $white;
+  }
+  // background        : $white;
 }
 
 .build{
+  background        : url(../images/leica/t/n4.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %feature-block;
-  background        : $black;
+  padding-top       : 300px;
+  // background        : $black;
+  color             : $black;
 
 }
 
 .quality{
+  background        : url(../images/79H.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %feature-block;
-  background        : #fafafa;
+  padding-top       : 300px;
+  // background        : #fafafa;
 }
 
 .memory{
+  background        : url(../images/leica/t/backface.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %detail-block;
   height            : 600px;
-  background        : #555;
+  padding-top       : 300px;
+  // background        : #555;
 }
 
 .accessories{
@@ -124,14 +266,34 @@ $heightReset: -125px;
 //
 // Support Page
 //
+.support{
+  background        : url(../images/support.jpg) no-repeat center center;
+  @include background-size(cover);
+  padding           : 200px 0 0 0;
+  min-height        : 680px;
+}
+
+//
+// Contact Us
+//
+
 
 //
 // Sign Up Page
 //
 
+.signup-content{
+  background        : url(../images/signupc.jpg) no-repeat center center;
+  @include background-size(cover);
+}
+
 .signup{
-  @extend %signup-block;
-  padding-top       : 60px;
+  padding           : 200px 0 0 0;
+  min-height        : 680px;
+  label{
+  letter-spacing    : 1px;
+   color            :$white;
+  }
 
   .highlight{
     letter-spacing  : 3px;
@@ -140,6 +302,11 @@ $heightReset: -125px;
     background      : $black;
     color           : $white;
     border-radius   : 3px;
+
+    &:hover{
+       transition   : .4s;
+       background   :$red;
+    }
   }
 }
 
@@ -147,6 +314,8 @@ $heightReset: -125px;
 //
 // Different view includes.
 //
+@import 'views/widescreen';
 @import 'views/tablet';
 @import 'views/phone';
+
 

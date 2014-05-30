@@ -20,28 +20,27 @@ html
 
 		//-Sign Up
 		//-_______________
-		.content
-			.wrapper
-				.container
-					.row
-						.col-xs-8.col-xs-push-2.col-md-2.col-md-push-5.signup
-							form(role="form")
-								.form-group
-									label(for="fullname")
-										| Full Name
-									input#fullname.form-control(type="name")(placerholder="Full Name")
-								.form-group
-									label(for="email")
-										| Email Address
-									input#email.form-control(type="email")(placerholder="Enter email")
-								.form-group
-									label(for="password")
-										| Password
-									input#password.form-control(type="Password")(placerholder="Password")
-								.form-group
-									.col-sm-offset-2.col-sm-10
-									a.highlight.text-center(href="#")(type="submit")
-										| Sign Up
+		.signup-content
+			.container
+				.row
+					.col-xs-8.col-xs-push-2.col-md-3.col-md-push-5.signup
+						form(role="form")
+							.form-group
+								label(for="fullname")
+									| Full Name
+								input#fullname.form-control(type="name", placerholder="Full Name")
+							.form-group
+								label(for="email")
+									| Email Address
+								input#email.form-control(type="email", placerholder="Enter email")
+							.form-group
+								label(for="password")
+									| Password
+								input#password.form-control(type="Password", placerholder="Password")
+							.form-group
+								.col-sm-offset-2.col-sm-10
+								a.highlight.text-center(href="#", type="submit")
+									| Sign Up
 		//-Footer
 		//-___________________________
 		include includes/_footer

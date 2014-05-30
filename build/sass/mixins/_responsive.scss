@@ -1,13 +1,13 @@
 //
 // Mixin for inline responsive design
 //
-$phone  : 360px;
-$tablet     : 600px;
+$phone             : 360px;
+$tablet            : 600px;
 $smallScreen       : 768px;
-$mediumScreen   : 992px;
-$largeScreen        : 1200px;
-$Desktop:'';
-$BigScreen:'';
+$mediumScreen      : 992px;
+$largeScreen       : 1200px;
+$desktopScreen     : 1920px;
+$BigScreen         : 2800px;
 
 
 @function minW($breakPoint) {
@@ -19,6 +19,12 @@ $BigScreen:'';
 }
 
 @mixin forScreen($size) {
+
+	@if $size ==$largeScreen {
+		@media #{minW($largeScreen)} and #{maxW($desktopScreen)}{
+			@content;
+		}
+	}
 
 	@if $size ==$phone {
 		@media #{minW($phone)} and #{maxW(400px)}{
