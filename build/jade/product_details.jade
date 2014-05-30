@@ -1,0 +1,68 @@
+doctype html
+html
+	head
+		title Lecia Camera AG
+		meta(charset="utf-8")
+		meta(description="Mycamera website")
+		meta(keywords="cage, boom, brim")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+		link(href="public/css/bootstrap.min.css" rel="stylesheet")
+		link(href="public/css/bootstrap-theme.min.css" rel="stylesheet")
+		link(href="public/css/application.css" rel="stylesheet")
+		link(href="http://fonts.googleapis.com/css?family=Open Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic;" rel="stylesheet" type="text/css")
+
+	body
+
+		//- Header and Nav
+		//- ___________________________.navbar-fixed-top
+		include includes/_nav
+
+		//- Main Product Details
+		//- ___________________________
+		.overview
+			.container
+				.col-md-4
+					h1.highlight Leica T
+					p.highlight.text-center
+						| Take pictures and share them. Quickly and easily.
+					.col-md-6.text-center
+						h3.highlight $1,999
+					.col-md-6.text-center
+						a(href="#")
+							h3.highlight Buy Now
+
+		//-Product Features
+		//-___________________________
+		.build
+			.container
+				.col-md-4
+					h2.highlight Clean design.
+					p.highlight
+						| Take pictures and share them. Quickly and easily. By email, or on Facebook and other social networks. All you have to do is download the free Leica T app to your iOS device.
+
+		.quality
+			.container
+				.col-md-4
+					h2.highlight Stunning picture quality.
+					p.highlight
+						| Take pictures and share them. Quickly and easily. By email, or on Facebook and other social networks. All you have to do is download the free Leica T app to your iOS device.
+
+		.memory
+			.container
+				.col-md-4
+					h2.highlight Built in memory.
+					p.highlight
+						| Take pictures and share them. Quickly and easily. By email, or on Facebook and other social networks. All you have to do is download the free Leica T app to your iOS device.
+
+		//-Product Accessories
+		//-___________________________
+			include includes/views/_accessories
+
+
+		//-Footer
+		//-___________________________
+		include includes/_footer
+		include includes/_js
+
+
