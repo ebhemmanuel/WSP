@@ -32,7 +32,7 @@ ul, ol, li {
 
 /* line 33, ../../build/sass/includes/_resets.scss */
 .pushDown {
-  margin-top: 220px;
+  margin-top: 140px;
 }
 
 /* line 37, ../../build/sass/includes/_resets.scss */
@@ -264,26 +264,88 @@ html, body {
 
 /* line 121, ../../build/sass/application.scss */
 .tile1 {
-  padding-top: 320px;
-  background: #111;
+  padding-top: 280px;
+  background: url(../images/100y.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
 }
 /* line 123, ../../build/sass/application.scss */
 .tile1 h2 {
+  font-weight: lighter;
   letter-spacing: 3px;
 }
 
-/* line 131, ../../build/sass/application.scss */
+/* line 134, ../../build/sass/application.scss */
 .tile2 {
-  background: white;
+  background: url(../images/values.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 135, ../../build/sass/application.scss */
+.tile2 .highlight {
+  padding: 25px;
 }
 
-/* line 136, ../../build/sass/application.scss */
+/* line 144, ../../build/sass/application.scss */
 .tile3 {
   background: #ed1c24;
+  color: white;
+}
+/* line 148, ../../build/sass/application.scss */
+.tile3 h2 {
+  letter-spacing: 3px;
+  font-weight: lighter;
+  padding-bottom: 40px;
 }
 
-/* line 146, ../../build/sass/application.scss */
+/* line 157, ../../build/sass/application.scss */
+.google-icon, .facebook-icon, .twitter-icon, .youtube-icon {
+  height: 80px;
+  width: 80px;
+}
+
+/* line 162, ../../build/sass/application.scss */
+.google-icon {
+  background: url(../images/follow/gp.svg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/* line 168, ../../build/sass/application.scss */
+.facebook-icon {
+  background: url(../images/follow/fb.svg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/* line 175, ../../build/sass/application.scss */
+.twitter-icon {
+  background: url(../images/follow/tw.svg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/* line 182, ../../build/sass/application.scss */
+.youtube-icon {
+  background: url(../images/follow/yt.svg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/* line 193, ../../build/sass/application.scss */
 .LM {
   background: url(../images/products/m.jpg) no-repeat center center;
   -webkit-background-size: contain;
@@ -293,7 +355,7 @@ html, body {
   background-position: 600px 220px;
 }
 
-/* line 154, ../../build/sass/application.scss */
+/* line 201, ../../build/sass/application.scss */
 .LM7 {
   background: url(../images/products/m7.jpg) no-repeat center center;
   -webkit-background-size: contain;
@@ -303,7 +365,7 @@ html, body {
   background-position: 600px 220px;
 }
 
-/* line 163, ../../build/sass/application.scss */
+/* line 210, ../../build/sass/application.scss */
 .LM9 {
   background: url(../images/products/m92.jpg) no-repeat center center;
   -webkit-background-size: contain;
@@ -313,39 +375,60 @@ html, body {
   background-position: 600px 220px;
 }
 
-/* line 175, ../../build/sass/application.scss */
+/* line 222, ../../build/sass/application.scss */
 .overview {
-  background: white;
+  background: url(../images/leica/t/t1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 300px;
 }
 
-/* line 180, ../../build/sass/application.scss */
+/* line 230, ../../build/sass/application.scss */
 .build {
-  background: #333333;
+  background: url(../images/leica/t/n4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 300px;
+  color: #333333;
 }
 
-/* line 186, ../../build/sass/application.scss */
+/* line 240, ../../build/sass/application.scss */
 .quality {
-  background: #fafafa;
+  background: url(../images/79H.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 300px;
 }
 
-/* line 191, ../../build/sass/application.scss */
+/* line 248, ../../build/sass/application.scss */
 .memory {
+  background: url(../images/leica/t/backface.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 600px;
-  background: #555;
+  padding-top: 300px;
 }
 
-/* line 197, ../../build/sass/application.scss */
+/* line 257, ../../build/sass/application.scss */
 .accessories {
   height: 680px;
 }
 
-/* line 204, ../../build/sass/application.scss */
+/* line 264, ../../build/sass/application.scss */
 .support {
   padding: 200px 0 0 0;
   min-height: 680px;
 }
 
-/* line 213, ../../build/sass/application.scss */
+/* line 273, ../../build/sass/application.scss */
 .signup-content {
   background: url(../images/signupc.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -354,17 +437,17 @@ html, body {
   background-size: cover;
 }
 
-/* line 218, ../../build/sass/application.scss */
+/* line 278, ../../build/sass/application.scss */
 .signup {
   padding: 200px 0 0 0;
   min-height: 680px;
 }
-/* line 221, ../../build/sass/application.scss */
+/* line 281, ../../build/sass/application.scss */
 .signup label {
   letter-spacing: 1px;
   color: white;
 }
-/* line 226, ../../build/sass/application.scss */
+/* line 286, ../../build/sass/application.scss */
 .signup .highlight {
   letter-spacing: 3px;
   font-size: 16px;
@@ -373,7 +456,7 @@ html, body {
   color: white;
   border-radius: 3px;
 }
-/* line 234, ../../build/sass/application.scss */
+/* line 294, ../../build/sass/application.scss */
 .signup .highlight:hover {
   transition: .4s;
   background: #ed1c24;

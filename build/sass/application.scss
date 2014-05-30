@@ -121,21 +121,68 @@
 .tile1{
   @extend %big-detail;
   h2{
+    font-weight     : lighter;
     letter-spacing  : 3px;
   }
-  padding-top       : 320px;
-  background        : #111;
+  padding-top       : 280px;
+  // background        : #111;
+  background        : url(../images/100y.jpg) no-repeat center center;
+  @include background-size(cover);
   color             : $white;
 }
 
 .tile2{
+  .highlight{
+    padding: 25px;
+  }
   @extend %big-detail;
-  background        : $white;
+  background        : url(../images/values.jpg)  no-repeat center center;
+  @include background-size(cover);
+  // background        : $white;
 }
 
 .tile3 {
   @extend %big-detail;
   background        : $red;
+  color             : $white;
+  h2{
+    letter-spacing  : 3px;
+    font-weight     : lighter;
+    padding-bottom  : 40px;
+  }
+}
+
+$icon-size          : 80px;
+
+%social-icon{
+  height            : $icon-size;
+  width             : $icon-size;
+}
+
+.google-icon{
+  @extend %social-icon;
+  background: url(../images/follow/gp.svg);
+  @include background-size(contain);
+}
+
+.facebook-icon{
+  @extend %social-icon;
+  background: url(../images/follow/fb.svg);
+  @include background-size(contain);
+
+}
+
+.twitter-icon{
+  @extend %social-icon;
+  background: url(../images/follow/tw.svg);
+  @include background-size(contain);
+
+}
+
+.youtube-icon{
+  @extend %social-icon;
+  background: url(../images/follow/yt.svg);
+  @include background-size(contain);
 }
 
 
@@ -173,25 +220,38 @@
 //
 
 .overview{
+  background        : url(../images/leica/t/t1.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %detail-block;
-  background        : $white;
+  padding-top       : 300px;
+  // background        : $white;
 }
 
 .build{
+  background        : url(../images/leica/t/n4.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %feature-block;
-  background        : $black;
+  padding-top       : 300px;
+  // background        : $black;
+  color             : $black;
 
 }
 
 .quality{
+  background        : url(../images/79H.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %feature-block;
-  background        : #fafafa;
+  padding-top       : 300px;
+  // background        : #fafafa;
 }
 
 .memory{
+  background        : url(../images/leica/t/backface.jpg)  no-repeat center center;
+  @include background-size(cover);
   @extend %detail-block;
   height            : 600px;
-  background        : #555;
+  padding-top       : 300px;
+  // background        : #555;
 }
 
 .accessories{
