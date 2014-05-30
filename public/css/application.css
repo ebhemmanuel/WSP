@@ -377,15 +377,20 @@ html, body {
 
 /* line 222, ../../build/sass/application.scss */
 .overview {
-  background: url(../images/leica/t/t1.jpg) no-repeat center center;
+  background: url(../images/leica/t/side.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 300px;
 }
+/* line 228, ../../build/sass/application.scss */
+.overview a .highlight:hover {
+  background: #ed1c24;
+  color: white;
+}
 
-/* line 230, ../../build/sass/application.scss */
+/* line 235, ../../build/sass/application.scss */
 .build {
   background: url(../images/leica/t/n4.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -396,7 +401,7 @@ html, body {
   color: #333333;
 }
 
-/* line 240, ../../build/sass/application.scss */
+/* line 245, ../../build/sass/application.scss */
 .quality {
   background: url(../images/79H.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -406,7 +411,7 @@ html, body {
   padding-top: 300px;
 }
 
-/* line 248, ../../build/sass/application.scss */
+/* line 253, ../../build/sass/application.scss */
 .memory {
   background: url(../images/leica/t/backface.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -417,18 +422,23 @@ html, body {
   padding-top: 300px;
 }
 
-/* line 257, ../../build/sass/application.scss */
+/* line 262, ../../build/sass/application.scss */
 .accessories {
   height: 680px;
 }
 
-/* line 264, ../../build/sass/application.scss */
+/* line 269, ../../build/sass/application.scss */
 .support {
+  background: url(../images/support.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 200px 0 0 0;
   min-height: 680px;
 }
 
-/* line 273, ../../build/sass/application.scss */
+/* line 285, ../../build/sass/application.scss */
 .signup-content {
   background: url(../images/signupc.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -437,17 +447,17 @@ html, body {
   background-size: cover;
 }
 
-/* line 278, ../../build/sass/application.scss */
+/* line 290, ../../build/sass/application.scss */
 .signup {
   padding: 200px 0 0 0;
   min-height: 680px;
 }
-/* line 281, ../../build/sass/application.scss */
+/* line 293, ../../build/sass/application.scss */
 .signup label {
   letter-spacing: 1px;
   color: white;
 }
-/* line 286, ../../build/sass/application.scss */
+/* line 298, ../../build/sass/application.scss */
 .signup .highlight {
   letter-spacing: 3px;
   font-size: 16px;
@@ -456,7 +466,7 @@ html, body {
   color: white;
   border-radius: 3px;
 }
-/* line 294, ../../build/sass/application.scss */
+/* line 306, ../../build/sass/application.scss */
 .signup .highlight:hover {
   transition: .4s;
   background: #ed1c24;

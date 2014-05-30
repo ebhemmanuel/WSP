@@ -220,10 +220,15 @@ $icon-size          : 80px;
 //
 
 .overview{
-  background        : url(../images/leica/t/t1.jpg)  no-repeat center center;
+  background        : url(../images/leica/t/side.jpg)  no-repeat center center;
   @include background-size(cover);
   @extend %detail-block;
   padding-top       : 300px;
+
+  a .highlight:hover{
+    background      : $red;
+    color           : $white;
+  }
   // background        : $white;
 }
 
@@ -262,10 +267,17 @@ $icon-size          : 80px;
 // Support Page
 //
 .support{
+  background        : url(../images/support.jpg) no-repeat center center;
+  @include background-size(cover);
   padding           : 200px 0 0 0;
   min-height        : 680px;
-
 }
+
+//
+// Contact Us
+//
+
+
 //
 // Sign Up Page
 //
