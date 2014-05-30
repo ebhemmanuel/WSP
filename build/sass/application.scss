@@ -1,6 +1,8 @@
 //
 // Globals = persistant dom layout across pages
 @import 'compass/css3';
+@import 'compass/css3/transform';
+@import 'compass/css3/transition';
 @import 'globals/variables';
 //
 // Includes = persistent aesthetic styling across pages
@@ -22,18 +24,9 @@
   background        : $white;
 }
 
-.content{
-  height            : 100%;
-  margin-top        : -65px;
+.pointer{
+  cursor            : pointer
 }
-
-.wrapper{
-  // position          : relative;
-  height            : inherit;
-  background        : #F2F2F2;
-  padding-top       : 65px;
-}
-
 
 .phoneView{
   display           : none;
@@ -45,6 +38,7 @@
   color             : $black;
   padding           : $paddingH;
   border-radius     : 3px;
+
 }
 
 .smallerText{
@@ -52,15 +46,35 @@
 }
 
 %feature-block{
-  @include background-size;
+  @include background-size(cover);
   height            : 760px;
   margin-bottom     : 0;
 }
 
 %detail-block{
-  @include background-size;
+  @include background-size(cover);
   height            : 595px;
   margin-bottom     : 0;
+}
+
+.t-cam{
+  background: url(../images/menu/t.svg);
+  @include background-size(contain);
+}
+
+.m-cam{
+  background: url(../images/menu/m.svg);
+  @include background-size(contain);
+}
+
+.s-cam{
+  background: url(../images/menu/s.svg);
+  @include background-size(contain);
+}
+
+.x-cam{
+  background: url(../images/menu/x.svg);
+  @include background-size(contain);
 }
 
 
@@ -74,21 +88,88 @@
   letter-spacing    : 5px;
   background        : url(../images/m9c.jpg)  no-repeat center center;
   @include background-size(cover);
-  a{
-    font-size       : 20px;
+  a{  transition    : .2s ;
+      font-size     : 18px;
+  }
+  a:hover{
+    color           : $white;
+  }
+  .highlight{
+
+    &:hover{
+      background    : $red;
+    }
   }
 }
 
 %big-detail{
-  height            : 530px
+  height            : 530px;
+  a{
+    font-size       : 20px;
+    color           : $black;
+    &:hover{
+     transition     : .2s;
+     color          : $red;
+    }
+  }
 }
 
 %small-detail{
   height            : 300px
 }
 
+.tile1{
+  @extend %big-detail;
+  h2{
+    letter-spacing  : 3px;
+  }
+  padding-top       : 320px;
+  background        : #111;
+  color             : $white;
+}
+
+.tile2{
+  @extend %big-detail;
+  background        : $white;
+}
+
+.tile3 {
+  @extend %big-detail;
+  background        : $red;
+}
+
+
 //
-// Products Page
+// Product Page
+//
+
+.LM{
+  background        : url(../images/products/m.jpg)  no-repeat center center;
+  @extend %big-detail;
+  @include background-size(contain);
+  background-position: 600px 220px;
+
+}
+
+.LM7{
+  background        : url(../images/products/m7.jpg)  no-repeat center center;
+  @extend %big-detail;
+  @include background-size(contain);
+  background-position: 600px 220px;
+
+
+}
+
+.LM9{
+  background        : url(../images/products/m92.jpg)  no-repeat center center;
+  @extend %big-detail;
+  @include background-size(contain);
+  background-position: 600px 220px;
+
+}
+
+//
+// Product Detail Page
 //
 
 .overview{
@@ -129,9 +210,18 @@
 // Sign Up Page
 //
 
+.signup-content{
+  background        : url(../images/signupc.jpg) no-repeat center center;
+  @include background-size(cover);
+}
+
 .signup{
   padding           : 200px 0 0 0;
   min-height        : 680px;
+  label{
+  letter-spacing    : 1px;
+   color            :$white;
+  }
 
   .highlight{
     letter-spacing  : 3px;
@@ -140,6 +230,11 @@
     background      : $black;
     color           : $white;
     border-radius   : 3px;
+
+    &:hover{
+       transition   : .4s;
+       background   :$red;
+    }
   }
 }
 

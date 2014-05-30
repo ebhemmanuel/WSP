@@ -7,15 +7,19 @@ ul, ol, li {
 }
 
 //Thumbnail
-.placeholder-thumbnail{
+.thumbnail{
   display           : block;
-  height            : $thumnailSize;
-  width             : $thumnailSize;
+  height            : $thumbnailSize;
+  width             : $thumbnailSize;
   background        : #999;
   margin-left       : auto;
   margin-right      : auto;
-  margin-bottom     : $thumbnailPadding;
-  margin-top        : $thumbnailPadding;
+  margin-top        : 15px;
+  margin-bottom     : 4px;
+  border-radius     : 0;
+  border: none;
+  box-shadow: none;
+
 }
 
 .resetLeft{
