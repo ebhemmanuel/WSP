@@ -4,3 +4,4 @@ $( document ).ready(function() {
 	  $('.camera-menu').toggleClass('open-camera-menu');
 	});
 });
+
