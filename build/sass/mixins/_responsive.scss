@@ -25,7 +25,6 @@ $desktop-max       : 1980px;
 }
 
 @mixin forScreen($size) {
-
 	@if $size ==$desktop {
 		@media #{minW($desktop-mins)} and #{maxW($desktop-max)}{
 			@content;
