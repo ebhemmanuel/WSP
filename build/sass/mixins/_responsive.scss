@@ -1,14 +1,20 @@
-//
 // Mixin for inline responsive design
-//
-$phone             : 360px;
-$tablet            : 600px;
 $smallScreen       : 768px;
 $mediumScreen      : 992px;
 $largeScreen       : 1200px;
 $desktopScreen     : 1920px;
-$BigScreen         : 2800px;
-
+//Phone
+$phone             : '';
+$phone-min         : 360px;
+$phone-max         : 400px;
+//Tablet
+$tablet            : '';
+$tablet-min	   : 401;
+$tablet-max        : 992px;
+//Desktop
+$desktop           : '';
+$desktop-min       : 1200px;
+$desktop-max       : 1980px;
 
 @function minW($breakPoint) {
 	@return "screen and (min-width:" + $breakPoint + ")";
@@ -20,20 +26,20 @@ $BigScreen         : 2800px;
 
 @mixin forScreen($size) {
 
-	@if $size ==$largeScreen {
-		@media #{minW($largeScreen)} and #{maxW($desktopScreen)}{
+	@if $size ==$desktop {
+		@media #{minW($desktop-mins)} and #{maxW($desktop-max)}{
 			@content;
 		}
 	}
 
 	@if $size ==$phone {
-		@media #{minW($phone)} and #{maxW(400px)}{
+		@media #{minW($phone-min)} and #{maxW($phone-max)}{
 			@content;
 		}
 	}
 
 	@if $size == $tablet {
-		@media  #{minW(401px)} and #{maxW($mediumScreen)} and  (orientation: portrait){
+		@media  #{minW($tablet-min)} and #{maxW($tablet-max)} and  (orientation: portrait){
 			@content;
 		}
 	}
@@ -49,5 +55,4 @@ $BigScreen         : 2800px;
 			@content;
 		}
 	}
-
 }
